@@ -32,3 +32,13 @@
   subRoutes:
     FlowSubroutes:
       package: TYPO3.Flow
+
+-
+  name: 'Apimenti.Translator'
+  uriPattern: '<AccountSubroutes>'
+  defaults:
+    '@package':    'Apimenti.Translator'
+    '@format':     'html'
+  subRoutes:
+    AccountSubroutes:
+      package: Apimenti.Translator

@@ -2497,3 +2497,711 @@
 13-07-07 22:49:20 7700       DEBUG     Flow                 Compiling Doctrine proxies
 13-07-07 22:49:21 7700       DEBUG     Flow                 Router route(): Route "Flow :: fallback" matched the path "".
 13-07-07 22:49:22 7700       DEBUG     Flow                 No CSRF required, safe request
+13-07-20 19:28:50 6582       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "d41d8cd98f00b204e9800998ecf8427e_GET" matched the path "".
+13-07-20 19:28:50 6582       DEBUG     Flow                 No CSRF required, safe request
+13-07-20 19:29:44 177        DEBUG     Flow                 Router route(): Route "Flow :: default" matched the path "flow/welcome".
+13-07-20 19:29:44 177        DEBUG     Flow                 No CSRF required, safe request
+13-07-20 19:29:44 177        CRITICAL  Flow                 Uncaught exception #1303209195 in line 75 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Dispatcher.php: No controller could be resolved which would match your request. Package key: "flow", controller name: "welcome" - See also: 2013072019294489bff1.txt
+13-07-20 19:29:51 6581       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "d41d8cd98f00b204e9800998ecf8427e_GET" matched the path "".
+13-07-20 19:29:51 6581       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:16:13 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "d41d8cd98f00b204e9800998ecf8427e_GET" matched the path "".
+13-08-10 10:16:13 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "d41d8cd98f00b204e9800998ecf8427e_GET" matched the path "".
+13-08-10 10:16:13 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:16:13 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:39:01 1247       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 2 changed files and 0 changed directories.
+13-08-10 10:39:01 1247       INFO      Flow                 A configuration file matching the pattern "/Routes([^\/]*)\.yaml/" has been changed, flushing related cache "Flow_Mvc_Routing_FindMatchResults"
+13-08-10 10:39:01 1247       INFO      Flow                 A configuration file matching the pattern "/Routes([^\/]*)\.yaml/" has been changed, flushing related cache "Flow_Mvc_Routing_Resolve"
+13-08-10 10:39:01 1247       INFO      Flow                 The configuration has changed, triggering an AOP proxy class rebuild.
+13-08-10 10:39:02 1247       INFO      Flow                 File Monitor "Flow_ConfigurationFiles" detected 1 changed files and 0 changed directories.
+13-08-10 10:39:05 1536       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 10:39:05 1536       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 10:39:05 1536       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\TranslatorService
+13-08-10 10:39:05 1536       INFO      Flow                 Reflected 2 emerged classes.
+13-08-10 10:39:08 1536       INFO      Flow                 Aspects have been modified, therefore rebuilding all target classes.
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Command\CacheCommandController".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Mvc\ActionRequest".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Mvc\Dispatcher".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Mvc\FlashMessageContainer".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Mvc\Routing\ObjectPathMapping".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Mvc\Routing\Router".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Persistence\Doctrine\PersistenceManager".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Persistence\Doctrine\Query".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Persistence\Generic\Backend\AbstractBackend".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Persistence\Generic\PersistenceManager".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Persistence\Generic\Query".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Resource\Publishing\AbstractPublishingConfiguration".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Resource\Publishing\FileSystemPublishingTarget".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Resource\Resource".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Resource\ResourcePointer".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Account".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Authentication\AuthenticationProviderManager".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Authentication\Provider\FileBasedSimpleKeyProvider".
+13-08-10 10:39:08 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Authentication\Provider\PersistedUsernamePasswordProvider".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Authentication\Provider\TestingProvider".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Authentication\Provider\Typo3OrgSsoProvider".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Authorization\AccessDecisionVoterManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Authorization\Resource\SecurityPublishingConfiguration".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Context".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Policy\Role".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Security\Policy\RoleRepository".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Session\Session".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Flow\Session\TransientSession".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Fluid\Core\Widget\AjaxWidgetContextHolder".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Party\Domain\Model\AbstractParty".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Party\Domain\Model\ElectronicAddress".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Party\Domain\Model\Person".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Built AOP proxy for class "TYPO3\Party\Domain\Model\PersonName".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\Backend\ApcBackend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\Backend\MemcachedBackend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\Backend\NullBackend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\Backend\RedisBackend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\Backend\TransientMemoryBackend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\CacheFactory".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\CacheManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\Frontend\CacheEntryIterator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\Frontend\PhpFrontend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\Frontend\StringFrontend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cache\Frontend\VariableFrontend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cli\Command".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cli\CommandArgumentDefinition".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cli\CommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cli\CommandExceptionHandler".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cli\CommandManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cli\Request".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cli\RequestBuilder".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Cli\Response".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Command\CacheCommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Command\ConfigurationCommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Command\DoctrineCommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Command\HelpCommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Command\PackageCommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Command\RoutingCommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Command\SecurityCommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Composer\InstallerScripts".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Error\DebugExceptionHandler".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Error\Error".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Error\ErrorHandler".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Error\Message".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Error\Notice".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Error\ProductionExceptionHandler".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Error\Result".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Error\Warning".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Http\Client\Browser".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Http\Client\CurlEngine".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Http\Client\InternalRequestEngine".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Cldr\CldrModel".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Cldr\CldrParser".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Cldr\CldrRepository".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Cldr\Reader\DatesReader".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Cldr\Reader\NumbersReader".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Cldr\Reader\PluralsReader".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Configuration".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Detector".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\FormatResolver".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Formatter\DatetimeFormatter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Formatter\NumberFormatter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\LocaleCollection".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Parser\DatetimeParser".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Parser\NumberParser".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Service".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\TranslationProvider\XliffTranslationProvider".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Translator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Utility".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Xliff\XliffModel".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\I18n\Xliff\XliffParser".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Log\Backend\ConsoleBackend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Log\Backend\FileBackend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Log\Backend\NullBackend".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Log\EarlyLogger".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Log\Logger".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Log\LoggerFactory".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Monitor\ChangeDetectionStrategy\ModificationTimeStrategy".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Monitor\FileMonitor".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\ActionRequest".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Controller\ActionController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Controller\Argument".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Controller\Arguments".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Controller\ControllerContext".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Controller\MvcPropertyMappingConfiguration".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Controller\MvcPropertyMappingConfigurationService".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Controller\NotFoundController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Controller\RestController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Controller\StandardController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Dispatcher".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\FlashMessageContainer".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Response".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Routing\Aspect\RouterCachingAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Routing\DynamicRoutePart".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Routing\IdentityRoutePart".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Routing\ObjectPathMapping".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Routing\ObjectPathMappingRepository".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Routing\Route".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Routing\Router".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Routing\StaticRoutePart".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\Routing\UriBuilder".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\View\JsonView".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Mvc\View\NotFoundView".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Aspect\PersistenceMagicAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\CacheAdapter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\EntityManagerFactory".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\Logging\SqlLogger".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\Mapping\ClassMetadata".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\Mapping\ClassMetadataFactory".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\Mapping\Driver\FlowAnnotationDriver".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\PersistenceManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\Query".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\QueryResult".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Doctrine\Service".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\EmptyQueryResult".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Aspect\LazyLoadingObjectAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\DataMapper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\LazySplObjectStorage".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\PersistenceManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\Comparison".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\Constraint".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\DynamicOperand".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\LogicalAnd".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\LogicalNot".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\LogicalOr".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\LowerCase".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\Operand".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\PropertyValue".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\QueryObjectModelFactory".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\StaticOperand".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Qom\UpperCase".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Query".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\QueryFactory".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\QueryResult".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Persistence\Generic\Session".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\PropertyMapper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\PropertyMappingConfiguration".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\PropertyMappingConfigurationBuilder".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\ArrayConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\BooleanConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\CollectionConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\DateTimeConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\FloatConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\IntegerConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\ObjectConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\PersistentObjectConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\SessionConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\StringConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Property\TypeConverter\UriTypeConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Resource\Publishing\FileSystemPublishingTarget".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Resource\Publishing\ResourcePublisher".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Resource\Resource".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Resource\ResourceManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Resource\ResourcePointer".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Resource\ResourceTypeConverter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Resource\Streams\ResourceStreamWrapper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Resource\Streams\StreamWrapperAdapter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Account".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\AccountFactory".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\AccountRepository".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Aspect\LoggingAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Aspect\PersistenceQueryRewritingAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Aspect\PolicyEnforcementAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Aspect\PrivateResourcesPublishingAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Aspect\RequestDispatchingAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\AuthenticationProviderManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\AuthenticationProviderResolver".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Controller\AuthenticationController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\EntryPoint\HttpBasic".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\EntryPoint\WebRedirect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Provider\FileBasedSimpleKeyProvider".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Provider\PersistedUsernamePasswordProvider".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Provider\TestingProvider".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Provider\Typo3OrgSsoProvider".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Token\PasswordToken".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Token\TestingToken".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Token\Typo3OrgSsoToken".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Token\UsernamePassword".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authentication\Token\UsernamePasswordHttpBasic".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\AccessDecisionVoterManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\AfterInvocationProcessorManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\FilterFirewall".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Interceptor\AccessDeny".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Interceptor\AccessGrant".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Interceptor\AfterInvocation".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Interceptor\PolicyEnforcement".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Interceptor\RequireAuthentication".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\InterceptorResolver".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\RequestFilter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Resource\Apache2AccessRestrictionPublisher".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Resource\SecurityPublishingConfiguration".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Voter\AccessDeny".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Voter\AccessGrant".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Authorization\Voter\Policy".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Channel\HttpsInterceptor".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Context".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Cryptography\Algorithms".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Cryptography\BCryptHashingStrategy".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Cryptography\FileBasedSimpleKeyService".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Cryptography\HashService".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Cryptography\OpenSslRsaKey".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Cryptography\Pbkdf2HashingStrategy".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Cryptography\RsaWalletServicePhp".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Cryptography\SaltedMd5HashingStrategy".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Policy\PolicyService".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Policy\Role".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\Policy\RoleRepository".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\RequestPattern\ControllerObjectName".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\RequestPattern\CsrfProtection".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\RequestPattern\Uri".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Security\RequestPatternResolver".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Session\Aspect\LazyLoadingAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Session\Aspect\LoggingAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Session\Aspect\SessionObjectMethodsPointcutFilter".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Session\Session".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Session\SessionManager".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Session\TransientSession".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\SignalSlot\Dispatcher".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\SignalSlot\SignalAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Error".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\AlphanumericValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\CollectionValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\ConjunctionValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\CountValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\DateTimeRangeValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\DateTimeValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\DisjunctionValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\EmailAddressValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\FloatValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\GenericObjectValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\IntegerValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\LabelValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\LocaleIdentifierValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\NotEmptyValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\NumberRangeValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\NumberValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\RawValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\RegularExpressionValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\StringLengthValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\StringValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\TextValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\UniqueEntityValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\Validator\UuidValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Flow\Validation\ValidatorResolver".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Command\DocumentationCommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Compiler\TemplateCompiler".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\Configuration".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\Interceptor\Escape".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\Interceptor\Resource".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\ParsingState".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\SyntaxTree\ArrayNode".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\SyntaxTree\BooleanNode".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\SyntaxTree\NumericNode".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\SyntaxTree\ObjectAccessorNode".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\SyntaxTree\RootNode".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\SyntaxTree\TextNode".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\SyntaxTree\ViewHelperNode".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Parser\TemplateParser".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Rendering\RenderingContext".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\ViewHelper\ArgumentDefinition".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\ViewHelper\TagBuilder".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\ViewHelper\TemplateVariableContainer".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\ViewHelper\ViewHelperVariableContainer".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Widget\AjaxWidgetContextHolder".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Widget\AjaxWidgetRoutingAspect".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Core\Widget\WidgetContext".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Fluid".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Package".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Service\DocbookGenerator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\Service\XsdGenerator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\View\StandaloneView".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\View\TemplateView".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\AliasViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\BaseViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\CommentViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\CountViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\CycleViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\DebugViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\ElseViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\FlashMessagesViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\ButtonViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\CheckboxViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\HiddenViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\PasswordViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\RadioViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\SelectViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\SubmitViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\TextareaViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\TextfieldViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\UploadViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Form\ValidationResultsViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\CropViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\CurrencyViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\DateViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\HtmlentitiesDecodeViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\HtmlentitiesViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\HtmlspecialcharsViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\IdentifierViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\JsonViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\Nl2brViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\NumberViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\PaddingViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\PrintfViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\RawViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\StripTagsViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Format\UrlencodeViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\FormViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\ForViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\GroupedForViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Identity\JsonViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\IfViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\LayoutViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Link\ActionViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Link\EmailViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Link\ExternalViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Link\WidgetViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\RenderChildrenViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\RenderViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\SectionViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Security\CsrfTokenViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Security\IfAccessViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Security\IfAuthenticatedViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Security\IfHasRoleViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\ThenViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\TranslateViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Uri\ActionViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Uri\EmailViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Uri\ExternalViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Uri\ResourceViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Uri\WidgetViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Widget\AutocompleteViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Widget\Controller\AutocompleteController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Widget\Controller\PaginateController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Widget\LinkViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Widget\PaginateViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Fluid\ViewHelpers\Widget\UriViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Party\Domain\Model\ElectronicAddress".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Party\Domain\Model\Person".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Party\Domain\Model\PersonName".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Party\Domain\Repository\PartyRepository".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Party\Domain\Validator\ElectronicAddressValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Party\Domain\Validator\PersonNameValidator".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Party\Package".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\StandardController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\TranslatorService".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Kickstart\Command\KickstartCommandController".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Kickstart\Package".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Kickstart\Service\GeneratorService".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Kickstart\Utility\Inflector".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Kickstart\ViewHelpers\Format\LtrimViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Kickstart\ViewHelpers\Format\UcfirstViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Kickstart\ViewHelpers\Inflect\HumanizeCamelCaseViewHelper".
+13-08-10 10:39:09 1536       DEBUG     Flow                 Building DI proxy for "TYPO3\Kickstart\ViewHelpers\Inflect\PluralizeViewHelper".
+13-08-10 10:39:10 1536       DEBUG     Flow                 Found 2 classes whose reflection data was not cached previously.
+13-08-10 10:39:11 1247       DEBUG     Flow                 Router route(): Route "Flow :: default with package" matched the path "translator/".
+13-08-10 10:39:11 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:39:11 1247       CRITICAL  Flow                 Uncaught exception #1303209195 in line 75 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Dispatcher.php: No controller could be resolved which would match your request. Package key: "translator", controller name: "Standard" - See also: 2013081010390171f55d.txt
+13-08-10 10:39:31 1251       DEBUG     Flow                 Router route(): Route "Flow :: default" matched the path "translator/translator".
+13-08-10 10:39:31 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:39:31 1251       CRITICAL  Flow                 Uncaught exception #1303209195 in line 75 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Dispatcher.php: No controller could be resolved which would match your request. Package key: "translator", controller name: "translator" - See also: 20130810103930a70731.txt
+13-08-10 10:39:41 1247       DEBUG     Flow                 Router route(): Route "Flow :: default" matched the path "apimenti.translator/translator".
+13-08-10 10:39:41 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:39:42 1247       CRITICAL  Flow                 Uncaught exception #1298012500 in line 146 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Controller_ActionController.php: Required argument "URL" is not set. - See also: 20130810103941b7c1d4.txt
+13-08-10 10:39:47 1246       DEBUG     Flow                 Router route(): Route "Flow :: default with action and format" matched the path "apimenti.translator/translator/sadasd".
+13-08-10 10:39:47 1246       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:39:47 1246       CRITICAL  Flow                 Uncaught exception #1186669086 in line 134 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Controller_ActionController.php: An action "sadasdAction" does not exist in controller "Apimenti\Translator\Controller\TranslatorController". - See also: 20130810103946c65ae3.txt
+13-08-10 10:39:56 1248       NOTICE    Flow                 Router route(): No route matched the route path "apimenti.translator/translator/index/asdad".
+13-08-10 10:39:56 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:39:56 1248       CRITICAL  Flow                 Uncaught exception #1303209195 in line 75 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Dispatcher.php: No controller could be resolved which would match your request. Package key: "", controller name: "Standard" - See also: 2013081010395564484f.txt
+13-08-10 10:40:07 1250       NOTICE    Flow                 Router route(): No route matched the route path "apimenti.translator/translator/index/URL=asd".
+13-08-10 10:40:07 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:40:07 1250       CRITICAL  Flow                 Uncaught exception #1303209195 in line 75 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Dispatcher.php: No controller could be resolved which would match your request. Package key: "", controller name: "Standard" - See also: 20130810104007353df9.txt
+13-08-10 10:42:08 1251       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 10:42:09 1549       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 10:42:09 1549       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 10:42:09 1549       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 10:42:09 1549       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 10:42:12 1549       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 10:42:12 1549       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 10:42:13 1251       DEBUG     Flow                 Router route(): Route "Flow :: default" matched the path "apimenti.translator/translator/".
+13-08-10 10:42:14 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:43:23 148        INFO      Flow                 File Monitor "Flow_ClassFiles" detected 2 changed files and 0 changed directories.
+13-08-10 10:43:24 1554       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 10:43:24 1554       DEBUG     Flow                 Forget class Apimenti\Translator\Service\TranslatorService
+13-08-10 10:43:24 1554       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 10:43:24 1554       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 10:43:24 1554       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\TranslatorService
+13-08-10 10:43:24 1554       INFO      Flow                 Reflected 2 emerged classes.
+13-08-10 10:43:25 1554       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 10:43:25 1554       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\TranslatorService".
+13-08-10 10:43:25 1554       DEBUG     Flow                 Found 2 classes whose reflection data was not cached previously.
+13-08-10 10:43:25 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 10:43:25 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:46:23 1245       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 10:46:23 1564       DEBUG     Flow                 Forget class Apimenti\Translator\Service\TranslatorService
+13-08-10 10:46:23 1564       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 10:46:23 1564       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\TranslatorService
+13-08-10 10:46:23 1564       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 10:46:24 1564       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\TranslatorService".
+13-08-10 10:46:24 1564       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 10:46:25 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 10:46:25 1245       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:46:28 1245       DEBUG     Flow                 Router route(): Route "Flow :: default" matched the path "ajax/cv.php".
+13-08-10 10:46:28 1245       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-10 10:46:28 1245       CRITICAL  Flow                 Uncaught exception #1303209195 in line 75 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Dispatcher.php: No controller could be resolved which would match your request. Package key: "ajax", controller name: "cv.php" - See also: 2013081010462744d5f7.txt
+13-08-10 10:46:29 1247       NOTICE    Flow                 Router route(): No route matched the route path "static/cc/swf/F91.swf".
+13-08-10 10:46:29 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 10:46:29 1247       CRITICAL  Flow                 Uncaught exception #1303209195 in line 75 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Dispatcher.php: No controller could be resolved which would match your request. Package key: "", controller name: "Standard" - See also: 2013081010462795d63e.txt
+13-08-10 11:09:01 1249       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:09:02 1617       DEBUG     Flow                 Forget class Apimenti\Translator\Service\TranslatorService
+13-08-10 11:09:02 1617       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:09:02 1617       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\TranslatorService
+13-08-10 11:09:02 1617       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:09:03 1617       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\TranslatorService".
+13-08-10 11:09:03 1617       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:09:04 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:09:04 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:09:48 1251       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:09:48 1623       DEBUG     Flow                 Forget class Apimenti\Translator\Service\TranslatorService
+13-08-10 11:09:48 1623       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:09:48 1623       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\TranslatorService
+13-08-10 11:09:48 1623       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:09:49 1623       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\TranslatorService".
+13-08-10 11:09:49 1623       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:09:50 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:09:50 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:10:14 1246       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:10:14 1626       DEBUG     Flow                 Forget class Apimenti\Translator\Service\TranslatorService
+13-08-10 11:10:14 1626       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:10:14 1626       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\TranslatorService
+13-08-10 11:10:14 1626       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:10:16 1626       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\TranslatorService".
+13-08-10 11:10:16 1626       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:10:16 1246       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:10:16 1246       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:11:03 1250       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:11:03 1630       DEBUG     Flow                 Forget class Apimenti\Translator\Service\TranslatorService
+13-08-10 11:11:03 1630       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:11:03 1630       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\TranslatorService
+13-08-10 11:11:03 1630       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:11:04 1630       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\TranslatorService".
+13-08-10 11:11:04 1630       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:11:05 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:11:05 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:11:08 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b79109803478f1acef9d6a69f83eff7f_POST" matched the path "ajax/cv.php".
+13-08-10 11:11:08 1249       NOTICE    Flow                 Router route(): No route matched the route path "static/cc/swf/F91.swf".
+13-08-10 11:11:08 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:11:08 1250       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-10 11:11:08 1250       CRITICAL  Flow                 Uncaught exception #1303209195 in line 75 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Dispatcher.php: No controller could be resolved which would match your request. Package key: "ajax", controller name: "cv.php" - See also: 20130810111107f08f8e.txt
+13-08-10 11:11:08 1249       CRITICAL  Flow                 Uncaught exception #1303209195 in line 75 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Dispatcher.php: No controller could be resolved which would match your request. Package key: "", controller name: "Standard" - See also: 201308101111073f915d.txt
+13-08-10 11:24:42 1251       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 3 changed files and 0 changed directories.
+13-08-10 11:24:43 1668       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:24:43 1668       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:24:43 1668       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:24:43 1668       DEBUG     Flow                 Reflecting class Apimenti\Translator\Domain\Dto\Song
+13-08-10 11:24:43 1668       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\ParseService
+13-08-10 11:24:43 1668       DEBUG     Flow                 Could not reflect "Apimenti\Translator\Service\ParseService" because the class could not be loaded.
+13-08-10 11:24:43 1668       INFO      Flow                 Reflected 3 emerged classes.
+13-08-10 11:24:44 1251       CRITICAL  Flow                 Uncaught exception #1355480641 in line 227 of /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php: Execution of subprocess failed with exit code 255 and output:
+
+
+Fatal error: Cannot redeclare class Apimenti\Translator\Service\ParserService in /Library/WebServer/Documents/touke-flow/Packages/Application/Apimenti.Translator/Classes/Apimenti/Translator/Service/ParseService.php on line 7
+
+Call Stack:
+    0.0005     238984   1. {main}() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Scripts/flow.php:0
+    0.0133     983136   2. TYPO3\Flow\Core\Bootstrap->run() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Scripts/flow.php:55
+    0.0824    1438144   3. TYPO3\Flow\Cli\CommandRequestHandler->handleRequest() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Bootstrap.php:113
+    0.0824    1438696   4. TYPO3\Flow\Cli\CommandRequestHandler->boot() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Cli/CommandRequestHandler.php:91
+    0.0830    1471472   5. TYPO3\Flow\Core\Booting\Sequence->invoke() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Cli/CommandRequestHandler.php:147
+    0.0830    1471536   6. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:85
+    0.0835    1492608   7. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.1548    2131208   8. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.1726    2477072   9. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.1749    2674600  10. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.2901    3880264  11. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.2974    4442864  12. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.2974    4442864  13. TYPO3\Flow\Core\Booting\Step->__invoke() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:101
+    0.2974    4442912  14. call_user_func() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Step.php:49
+    0.2974    4442944  15. TYPO3\Flow\Core\Booting\Scripts::initializeObjectManagerCompileTimeFinalize() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Step.php:49
+    0.2976    4445880  16. TYPO3\Flow\Object\CompileTimeObjectManager->initialize() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php:302
+    0.7608   23532032  17. TYPO3\Flow\Object\Configuration\ConfigurationBuilder->buildObjectConfigurations() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/CompileTimeObjectManager.php:123
+    1.0879   39818504  18. interface_exists() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/Configuration/ConfigurationBuilder.php:75
+    1.0879   39818960  19. TYPO3\Flow\Core\ClassLoader->loadClass() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/Configuration/ConfigurationBuilder.php:0
+    1.0884   39854408  20. include('/Library/WebServer/Documents/touke-flow/Packages/Application/Apimenti.Translator/Classes/Apimenti/Translator/Service/ParseService.php') /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/ClassLoader.php:121
+
+
+The erroneous command was:
+FLOW_ROOTPATH='/Library/WebServer/Documents/touke-flow/' FLOW_CONTEXT='Development' XDEBUG_CONFIG='idekey=FLOW_SUBREQUEST remote_port=9001' "/opt/local/bin/php" -c '/opt/local/etc/php54/php.ini' '/Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/../../../../Scripts/flow.php' 'typo3.flow:core:compile' - See also: 20130810112441df5065.txt
+13-08-10 11:26:11 1672       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 2 changed files and 0 changed directories.
+13-08-10 11:26:11 1672       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:26:11 1672       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:26:11 1672       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:26:11 1672       DEBUG     Flow                 Reflecting class Apimenti\Translator\Domain\Dto\Song
+13-08-10 11:26:11 1672       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-10 11:26:11 1672       DEBUG     Flow                 Could not reflect "Apimenti\Translator\Service\SongParserService" because the class could not be loaded.
+13-08-10 11:26:11 1672       INFO      Flow                 Reflected 3 emerged classes.
+13-08-10 11:26:12 148        CRITICAL  Flow                 Uncaught exception #1355480641 in line 227 of /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php: Execution of subprocess failed with exit code 255 and output:
+
+
+Fatal error: Cannot redeclare class Apimenti\Translator\Service\SongParseService in /Library/WebServer/Documents/touke-flow/Packages/Application/Apimenti.Translator/Classes/Apimenti/Translator/Service/SongParserService.php on line 7
+
+Call Stack:
+    0.0004     238984   1. {main}() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Scripts/flow.php:0
+    0.0094     983136   2. TYPO3\Flow\Core\Bootstrap->run() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Scripts/flow.php:55
+    0.0790    1438144   3. TYPO3\Flow\Cli\CommandRequestHandler->handleRequest() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Bootstrap.php:113
+    0.0790    1438696   4. TYPO3\Flow\Cli\CommandRequestHandler->boot() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Cli/CommandRequestHandler.php:91
+    0.0796    1471472   5. TYPO3\Flow\Core\Booting\Sequence->invoke() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Cli/CommandRequestHandler.php:147
+    0.0796    1471536   6. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:85
+    0.0800    1492608   7. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.1529    2131208   8. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.1708    2477072   9. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.1731    2674600  10. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.2961    3922472  11. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.3022    4464304  12. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.3022    4464304  13. TYPO3\Flow\Core\Booting\Step->__invoke() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:101
+    0.3022    4464352  14. call_user_func() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Step.php:49
+    0.3022    4464384  15. TYPO3\Flow\Core\Booting\Scripts::initializeObjectManagerCompileTimeFinalize() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Step.php:49
+    0.3023    4465816  16. TYPO3\Flow\Object\CompileTimeObjectManager->initialize() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php:302
+    0.6056   23551488  17. TYPO3\Flow\Object\Configuration\ConfigurationBuilder->buildObjectConfigurations() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/CompileTimeObjectManager.php:123
+    0.8718   39820608  18. interface_exists() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/Configuration/ConfigurationBuilder.php:75
+    0.8718   39821064  19. TYPO3\Flow\Core\ClassLoader->loadClass() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/Configuration/ConfigurationBuilder.php:0
+    0.8723   39856488  20. include('/Library/WebServer/Documents/touke-flow/Packages/Application/Apimenti.Translator/Classes/Apimenti/Translator/Service/SongParserService.php') /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/ClassLoader.php:121
+
+
+The erroneous command was:
+FLOW_ROOTPATH='/Library/WebServer/Documents/touke-flow/' FLOW_CONTEXT='Development' XDEBUG_CONFIG='idekey=FLOW_SUBREQUEST remote_port=9001' "/opt/local/bin/php" -c '/opt/local/etc/php54/php.ini' '/Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/../../../../Scripts/flow.php' 'typo3.flow:core:compile' - See also: 201308101126119d782c.txt
+13-08-10 11:26:34 1676       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:26:35 1676       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:26:35 1676       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:26:35 1676       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:26:35 1676       DEBUG     Flow                 Reflecting class Apimenti\Translator\Domain\Dto\Song
+13-08-10 11:26:35 1676       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-10 11:26:35 1676       INFO      Flow                 Reflected 3 emerged classes.
+13-08-10 11:26:36 1676       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 11:26:36 1676       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Domain\Dto\Song".
+13-08-10 11:26:36 1676       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\SongParserService".
+13-08-10 11:26:36 1676       DEBUG     Flow                 Found 3 classes whose reflection data was not cached previously.
+13-08-10 11:26:36 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:26:36 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:26:36 1248       CRITICAL  Flow                 Uncaught exception #1 in line 24 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/Apimenti_Translator_Controller_TranslatorController.php: Notice: Undefined property: Apimenti\Translator\Controller\TranslatorController::$parseService in /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/Apimenti_Translator_Controller_TranslatorController.php line 24 - See also: 20130810112634afdc15.txt
+13-08-10 11:26:51 1250       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:26:52 1679       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:26:52 1679       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:26:52 1679       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:26:52 1679       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:26:53 1679       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 11:26:53 1679       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:26:53 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:26:53 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:27:03 1249       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:27:03 1682       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:27:03 1682       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:27:03 1682       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:27:03 1682       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:27:05 1682       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 11:27:05 1682       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:27:05 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:27:05 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:27:16 1251       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:27:17 1685       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:27:17 1685       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:27:17 1685       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:27:17 1685       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:27:18 1685       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 11:27:18 1685       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:27:18 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:27:18 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:27:18 1251       CRITICAL  Flow                 Uncaught exception #1 in line 27 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/Apimenti_Translator_Controller_TranslatorController.php: Notice: Array to string conversion in /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/Apimenti_Translator_Controller_TranslatorController.php line 27 - See also: 20130810112716ee2550.txt
+13-08-10 11:27:31 148        INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:27:32 1688       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:27:32 1688       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:27:32 1688       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:27:32 1688       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:27:33 1688       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 11:27:33 1688       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:27:34 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:27:34 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:28:06 1246       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:28:06 1697       DEBUG     Flow                 Forget class Apimenti\Translator\Service\SongParserService
+13-08-10 11:28:06 1697       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:28:06 1697       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-10 11:28:07 1697       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:28:08 1697       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\SongParserService".
+13-08-10 11:28:08 1697       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:28:08 1246       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:28:08 1246       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:28:36 1248       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:28:36 1700       DEBUG     Flow                 Forget class Apimenti\Translator\Service\SongParserService
+13-08-10 11:28:36 1700       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:28:36 1700       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-10 11:28:36 1700       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:28:37 1700       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\SongParserService".
+13-08-10 11:28:37 1700       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:28:37 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:28:38 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:29:02 1247       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:29:02 1703       DEBUG     Flow                 Forget class Apimenti\Translator\Service\SongParserService
+13-08-10 11:29:02 1703       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:29:02 1703       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-10 11:29:02 1703       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:29:03 1703       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\SongParserService".
+13-08-10 11:29:03 1703       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:29:03 1247       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:29:04 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:29:29 1250       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:29:29 1706       DEBUG     Flow                 Forget class Apimenti\Translator\Service\SongParserService
+13-08-10 11:29:29 1706       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:29:29 1706       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-10 11:29:29 1706       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:29:30 1706       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\SongParserService".
+13-08-10 11:29:30 1706       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:29:31 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:29:31 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:29:46 1249       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:29:47 1709       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:29:47 1709       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:29:47 1709       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:29:47 1709       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:29:48 1709       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 11:29:48 1709       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:29:48 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:29:48 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:31:20 1251       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:31:21 1713       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:31:21 1713       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:31:21 1713       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:31:21 1713       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:31:22 1713       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 11:31:22 1713       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:31:22 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:31:22 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:32:11 1245       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:32:12 1722       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:32:12 1722       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:32:12 1722       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:32:12 1722       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:32:14 1722       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 11:32:14 1722       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:32:14 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:32:14 1245       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:37:25 148        INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-10 11:37:25 1737       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:37:25 1737       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-10 11:37:25 1737       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-10 11:37:25 1737       INFO      Flow                 Reflected 1 emerged classes.
+13-08-10 11:37:27 1737       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-10 11:37:27 1737       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-10 11:37:27 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:37:27 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:37:27 148        CRITICAL  Fluid                Uncaught exception #1225709595 in line 150 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_View_TemplateView.php: Template could not be loaded. I tried "resource://Apimenti.Translator/Private/Templates/Translator/Index.html" - See also: 20130810113724a2b370.txt
+13-08-10 11:38:05 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:38:05 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:38:26 1247       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:38:26 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:38:44 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:38:44 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:39:03 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:39:03 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:39:07 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:39:07 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:39:26 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:39:26 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:39:34 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:39:34 1245       DEBUG     Flow                 No CSRF required, safe request
+13-08-10 11:40:03 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-10 11:40:03 148        DEBUG     Flow                 No CSRF required, safe request
