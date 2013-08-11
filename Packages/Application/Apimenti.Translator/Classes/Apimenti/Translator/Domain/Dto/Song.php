@@ -52,7 +52,7 @@ class Song {
 	var $serialSongChords;
    
    
-   function __construct($songURL, $songHTML, $songTitle, $artistName, $songLyric, $songChords, $serialSongChords) {
+   function __construct($songURL, $songHTML = null, $songTitle  = null, $artistName = null, $songLyric = null, $songChords = null, $serialSongChords = null) {
        $this->songURL = $songURL;
        $this->songHTML = $songHTML;
        $this->songTitle = $songTitle;
@@ -70,6 +70,10 @@ class Song {
        return $this->songURL;
    }
 
+   /**
+    *
+    * @param string $songURL 
+    */
    public function setSongURL($songURL) {
        $this->songURL = $songURL;
    }

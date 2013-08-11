@@ -104,11 +104,12 @@ class SongParserService {
 	 * @author Thiago Colares
 	 */
     private function getHTMLContentFromURL($URL) {
+        $this->songURL = $URL;
         // create a new cURL resource
         $ch = curl_init();
 
         // set URL and other appropriate options
-        curl_setopt($ch, CURLOPT_URL, $URL);
+        curl_setopt($ch, CURLOPT_URL, $this->songURL);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -131,7 +132,7 @@ class SongParserService {
      */
     private function getErrorArray($msg = 'Erro desconhecido.') {
         return array(
-            'success' => true,
+            'success' => false,
             'message' => $msg
         );
     }
@@ -158,7 +159,7 @@ class SongParserService {
 			else
 	  	        return $this->getSuccessArray();
 	  	} else {
-          $msg = '<strong>ÊTA!</strong> Tem certeza de que <em>\'' . $this->songURL . '\'</em> é o endereço completo de uma <strong>música cifrada</strong> do site <strong>www.cifraclub.com.br</strong>?';
+          $msg = "<strong>ÊTA! Tem certeza de que <em>\"$this->songURL\"</em> é o endereço completo de uma música cifrada do site <strong>www.cifraclub.com.br</strong>?";
           return $this->getErrorArray($msg);
 	  	}
 	}
@@ -286,23 +287,30 @@ class SongParserService {
      */
     public function parse($URL) {
         $this->songHTML = $this->getHTMLContentFromURL($URL);
-        $res = $this->runPullers();
-        if($res['success'] == true) {
-            return array(
-                'success' => true,
-                'song' => new \Apimenti\Translator\Domain\Dto\Song(
-                    $this->songURL,
-                    $this->songHTML,
-                    $this->songTitle,
-                    $this->artistName,
-                    $this->songLyric,
-                    $this->songChords,
-                    $this->serialSongChords
-                )
-            );
+        if($this->songHTML != null) {
+            $res = $this->runPullers();
+            if($res['success'] == true) {
+                $returnArray = array(
+                    'success' => true,
+                    'song' => new \Apimenti\Translator\Domain\Dto\Song(
+                        $this->songURL,
+                        $this->songHTML,
+                        $this->songTitle,
+                        $this->artistName,
+                        $this->songLyric,
+                        $this->songChords,
+                        $this->serialSongChords
+                    )
+                );
+            } else {
+                $returnArray = $res;
+            }
         } else {
-            return $res;
+            $returnArray = $this->getErrorArray("<strong>O endereço <em>\"$URL\"</em> parece inválido.</strong> Experimente abri-lo em outra janela do navegador para ter certeza de que ele existe.");
         }
+        
+        return $returnArray;
+
     }
     
 } ?>

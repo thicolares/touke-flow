@@ -1,38 +1,50 @@
+{namespace wget=Apimenti\Translator\ViewHelpers}
+
 <f:layout name="Default" />
 
 <f:section name="Title">
-    
+
 </f:section>
 
 <f:section name="Content">
     <div class="container">
 
         <div class="row">
-            <div class="col-2">
-                <small><em><p class="text-muted">ToUke v0.1.0a</p></em></small>
+            <div class="col-lg-3">
+                <h2 style="margin:0px; padding:0px"><span class="label label-success">ToUke</span> <small>Traduz pra ukulelê.</small></h2>
+
             </div>
-            <div class="col-10">
-                <form class="form-inline">
-                    <input type="text" class="form-control col-4" placeholder="Cole o endereço de uma música no http://www.cifraclub.com.br. Depois aperte a tecla ENTER.">
-                </form>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-12">                
-                <h2>{song.songTitle} <small>{song.artistName}</small></h2>
+            <div class="col-lg-9">
+                <f:form action="index" object="{song}" name="song" id="song" class="form-inline">
+                    <f:form.textfield name="songURL" property="songURL" class="form-control col-4" placeholder="Cole o endereço de uma música no http://www.cifraclub.com.br. Depois aperte a tecla ENTER."/>
+                </f:form>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-lg-2">
-                <f:render partial="ChordTable" arguments="{song: song}" />
+
+        <f:if condition="{song}">
+            <div class="row">
+                <div class="col-lg-12">                
+                    <h2>{song.songTitle} <small>{song.artistName}</small></h2>
+                </div>
             </div>
-            <div class="col-lg-10">
-                <pre>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <f:render partial="ChordTable" arguments="{song: song}" />
+                </div>
+                <div class="col-lg-9">
+                    <pre>
                     <f:format.raw value="{song.songLyric}" />
-                </pre>             
+                    </pre>             
+                </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-lg-12" style="text-align: right">                
+                    <small><em class="text-muted">Apimenti ToUke <a href="https://github.com/colares/touke-flow/wiki/Vers%C3%A3o-<wget:CurrentVersion />"> v<wget:CurrentVersion /></a></em></small>
+                </div>
+            </div>
+
+        </f:if>
+
     </div>
 </f:section>

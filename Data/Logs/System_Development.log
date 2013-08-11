@@ -6704,3 +6704,409 @@ FLOW_ROOTPATH='/Library/WebServer/Documents/touke-flow/' FLOW_CONTEXT='Developme
 13-08-11 11:23:33 1250       DEBUG     Flow                 No CSRF required, safe request
 13-08-11 11:24:12 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
 13-08-11 11:24:12 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:33:53 148        INFO      Flow                 File Monitor "Flow_ClassFiles" detected 2 changed files and 0 changed directories.
+13-08-11 11:33:55 3867       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 11:33:55 3867       DEBUG     Flow                 Reflecting class Apimenti\Translator\Util\General
+13-08-11 11:33:55 3867       DEBUG     Flow                 Could not reflect "Apimenti\Translator\Util\General" because the class could not be loaded.
+13-08-11 11:33:55 3867       DEBUG     Flow                 Reflecting class Apimenti\Translator\ViewHelpers\CurrentVersionViewHelper
+13-08-11 11:33:55 3867       INFO      Flow                 Reflected 2 emerged classes.
+13-08-11 11:33:56 148        CRITICAL  Flow                 Uncaught exception #1355480641 in line 227 of /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php: Execution of subprocess failed with exit code 255 and output:
+
+
+Fatal error: Cannot redeclare class Apimenti\Account\Util\General in /Library/WebServer/Documents/touke-flow/Packages/Application/Apimenti.Translator/Classes/Apimenti/Translator/Util/General.php on line 15
+
+Call Stack:
+    0.0008     238984   1. {main}() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Scripts/flow.php:0
+    0.4815     983136   2. TYPO3\Flow\Core\Bootstrap->run() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Scripts/flow.php:55
+    0.5525    1438080   3. TYPO3\Flow\Cli\CommandRequestHandler->handleRequest() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Bootstrap.php:113
+    0.5525    1438632   4. TYPO3\Flow\Cli\CommandRequestHandler->boot() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Cli/CommandRequestHandler.php:91
+    0.5531    1471400   5. TYPO3\Flow\Core\Booting\Sequence->invoke() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Cli/CommandRequestHandler.php:147
+    0.5531    1471464   6. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:85
+    0.5535    1492536   7. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.6269    2131024   8. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.6469    2476888   9. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.6493    2674464  10. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.7663    3882680  11. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.7743    4445304  12. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.7744    4445304  13. TYPO3\Flow\Core\Booting\Step->__invoke() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:101
+    0.7744    4445352  14. call_user_func() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Step.php:49
+    0.7744    4445384  15. TYPO3\Flow\Core\Booting\Scripts::initializeObjectManagerCompileTimeFinalize() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Step.php:49
+    0.7746    4448320  16. TYPO3\Flow\Object\CompileTimeObjectManager->initialize() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php:302
+    1.0779   23649392  17. TYPO3\Flow\Object\Configuration\ConfigurationBuilder->buildObjectConfigurations() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/CompileTimeObjectManager.php:123
+    1.4320   40163720  18. interface_exists() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/Configuration/ConfigurationBuilder.php:75
+    1.4320   40164144  19. TYPO3\Flow\Core\ClassLoader->loadClass() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/Configuration/ConfigurationBuilder.php:0
+    1.4322   40168400  20. include('/Library/WebServer/Documents/touke-flow/Packages/Application/Apimenti.Translator/Classes/Apimenti/Translator/Util/General.php') /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/ClassLoader.php:121
+
+
+The erroneous command was:
+FLOW_ROOTPATH='/Library/WebServer/Documents/touke-flow/' FLOW_CONTEXT='Development' XDEBUG_CONFIG='idekey=FLOW_SUBREQUEST remote_port=9001' "/opt/local/bin/php" -c '/opt/local/etc/php54/php.ini' '/Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/../../../../Scripts/flow.php' 'typo3.flow:core:compile' - See also: 2013081111335325d695.txt
+13-08-11 11:34:17 3871       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 11:34:17 3871       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 11:34:17 3871       DEBUG     Flow                 Reflecting class Apimenti\Translator\Util\General
+13-08-11 11:34:17 3871       DEBUG     Flow                 Reflecting class Apimenti\Translator\ViewHelpers\CurrentVersionViewHelper
+13-08-11 11:34:17 3871       INFO      Flow                 Reflected 2 emerged classes.
+13-08-11 11:34:19 3871       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Util\General".
+13-08-11 11:34:19 3871       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\ViewHelpers\CurrentVersionViewHelper".
+13-08-11 11:34:19 3871       DEBUG     Flow                 Found 2 classes whose reflection data was not cached previously.
+13-08-11 11:34:19 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:34:19 1245       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:34:29 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:34:29 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:34:47 1247       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 11:34:48 3874       DEBUG     Flow                 Forget class Apimenti\Translator\ViewHelpers\CurrentVersionViewHelper
+13-08-11 11:34:48 3874       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 11:34:48 3874       DEBUG     Flow                 Reflecting class Apimenti\Translator\ViewHelpers\CurrentVersionViewHelper
+13-08-11 11:34:48 3874       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 11:34:49 3874       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\ViewHelpers\CurrentVersionViewHelper".
+13-08-11 11:34:49 3874       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 11:34:49 1247       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:34:49 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:34:57 1250       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 11:34:58 3877       DEBUG     Flow                 Forget class Apimenti\Translator\ViewHelpers\CurrentVersionViewHelper
+13-08-11 11:34:58 3877       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 11:34:58 3877       DEBUG     Flow                 Reflecting class Apimenti\Translator\ViewHelpers\CurrentVersionViewHelper
+13-08-11 11:34:58 3877       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 11:35:00 3877       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\ViewHelpers\CurrentVersionViewHelper".
+13-08-11 11:35:00 3877       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 11:35:00 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:35:00 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:35:00 1250       CRITICAL  Flow                 Uncaught exception #1: Warning: file_get_contents(/Library/WebServer/Documents/touke-flow/Packages/Application/Apimenti.Account/composer.json): failed to open stream: No such file or directory in /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/Apimenti_Translator_Util_General.php line 22 - See also: 20130811113456511f5e.txt
+13-08-11 11:35:17 1245       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 11:35:18 3878       DEBUG     Flow                 Forget class Apimenti\Translator\Util\General
+13-08-11 11:35:18 3878       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 11:35:18 3878       DEBUG     Flow                 Reflecting class Apimenti\Translator\Util\General
+13-08-11 11:35:18 3878       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 11:35:19 3878       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Util\General".
+13-08-11 11:35:19 3878       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 11:35:19 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:35:19 1245       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:37:44 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:37:44 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:37:54 1246       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:37:54 1246       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:38:12 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:38:12 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:38:32 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:38:32 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:58:19 1246       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:58:19 1246       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 11:58:52 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 11:58:52 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:01:06 1246       DEBUG     Flow                 Router route(): Route "Flow :: fallback" matched the path "".
+13-08-11 12:01:06 1246       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:01:10 1246       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:01:10 1246       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:02:07 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:02:07 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:02:17 1247       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:02:17 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:02:29 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:02:29 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:02:39 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:02:39 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:03:29 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:03:29 1245       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:04:05 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:04:05 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:04:15 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:04:15 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:04:28 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:04:28 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:04:41 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:04:42 1245       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:05:06 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:05:06 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:05:15 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:05:15 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:05:42 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:05:42 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:06:06 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:06:06 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:06:36 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:06:36 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:06:55 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:06:55 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:07:12 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:07:12 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:07:46 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:07:46 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:12:37 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:12:37 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:12:38 1248       CRITICAL  Fluid                Uncaught exception #1224485398 in line 447 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: Templating tags not properly nested. Expected: TYPO3\Fluid\ViewHelpers\FormViewHelper; Actual: TYPO3\Fluid\ViewHelpers\SectionViewHelper - See also: 20130811121237c61d44.txt
+13-08-11 12:12:49 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:12:49 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:13:58 1245       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 12:13:59 3951       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 12:13:59 3951       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 12:13:59 3951       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 12:13:59 3951       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 12:14:02 3951       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 12:14:02 3951       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 12:14:02 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:14:02 1245       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:14:02 1245       CRITICAL  Flow                 Uncaught exception #1298012500 in line 146 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Controller_ActionController.php: Required argument "song" is not set. - See also: 20130811121357045a03.txt
+13-08-11 12:21:13 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "d41d8cd98f00b204e9800998ecf8427e_GET" matched the path "".
+13-08-11 12:21:13 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:21:14 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:21:14 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:21:14 1251       CRITICAL  Flow                 Uncaught exception #1298012500 in line 146 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_Controller_ActionController.php: Required argument "song" is not set. - See also: 2013081112211447d33d.txt
+13-08-11 12:21:50 1251       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 12:21:51 3971       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 12:21:51 3971       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 12:21:51 3971       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 12:21:51 3971       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 12:21:52 3971       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 12:21:52 3971       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 12:21:53 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:21:53 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:22:16 1249       DEBUG     Flow                 Router route(): Route "Flow :: default with action and format" matched the path "apimenti.translator/translator/index".
+13-08-11 12:22:16 1249       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 12:22:16 1249       CRITICAL  Flow                 Uncaught exception #1297759968: Exception while property mapping for target type "Apimenti\Translator\Domain\Dto\Song", at property path "": Property "song" had no setter or constructor argument in target object of type "Apimenti\Translator\Domain\Dto\Song". - See also: 20130811122215b5f1e2.txt
+    previousException => Uncaught exception #1303379126 in line 166 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Property_PropertyMapper.php: Property "song" had no setter or constructor argument in target object of type "Apimenti\Translator\Domain\Dto\Song".
+
+13-08-11 12:22:49 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 12:22:49 1248       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 12:22:49 1248       CRITICAL  Flow                 Uncaught exception #1297759968: Exception while property mapping for target type "Apimenti\Translator\Domain\Dto\Song", at property path "": Property "song" had no setter or constructor argument in target object of type "Apimenti\Translator\Domain\Dto\Song". - See also: 20130811122249be1e02.txt
+    previousException => Uncaught exception #1303379126 in line 166 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Property_PropertyMapper.php: Property "song" had no setter or constructor argument in target object of type "Apimenti\Translator\Domain\Dto\Song".
+
+13-08-11 12:22:52 1247       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:22:52 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:22:55 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 12:22:55 1250       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 12:22:55 1250       CRITICAL  Flow                 Uncaught exception #1297759968: Exception while property mapping for target type "Apimenti\Translator\Domain\Dto\Song", at property path "songURL": Could not find a suitable type converter for "mixed" because no such class or interface exists. - See also: 201308111222542a04b3.txt
+    previousException => Uncaught exception #1297948764 in line 213 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Property_PropertyMapper.php: Could not find a suitable type converter for "mixed" because no such class or interface exists.
+
+13-08-11 12:23:36 1249       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 12:23:36 3977       DEBUG     Flow                 Forget class Apimenti\Translator\Domain\Dto\Song
+13-08-11 12:23:36 3977       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 12:23:36 3977       DEBUG     Flow                 Reflecting class Apimenti\Translator\Domain\Dto\Song
+13-08-11 12:23:36 3977       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 12:23:37 3977       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Domain\Dto\Song".
+13-08-11 12:23:37 3977       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 12:23:38 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 12:23:38 1249       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 12:23:38 1249       CRITICAL  Flow                 Uncaught exception #1297759968: Exception while property mapping for target type "Apimenti\Translator\Domain\Dto\Song", at property path "": Missing constructor argument "songHTML" for object of type "Apimenti\Translator\Domain\Dto\Song". - See also: 2013081112233559adf3.txt
+    previousException => Uncaught exception #1268734872 in line 135 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Property_TypeConverter_ObjectConverter.php: Missing constructor argument "songHTML" for object of type "Apimenti\Translator\Domain\Dto\Song".
+
+13-08-11 12:24:00 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:24:00 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:24:21 1247       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 12:24:21 3980       DEBUG     Flow                 Forget class Apimenti\Translator\Domain\Dto\Song
+13-08-11 12:24:21 3980       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 12:24:21 3980       DEBUG     Flow                 Reflecting class Apimenti\Translator\Domain\Dto\Song
+13-08-11 12:24:21 3980       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 12:24:23 3980       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Domain\Dto\Song".
+13-08-11 12:24:23 3980       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 12:24:24 1247       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "40e2762c905c41e0a507260f028e90e6_GET" matched the path "apimenti.translator/translator/".
+13-08-11 12:24:24 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 12:24:38 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 12:24:38 1249       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 12:25:05 148        INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 12:25:05 3988       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 12:25:06 3988       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 12:25:06 3988       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 12:25:06 3988       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 12:25:07 3988       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 12:25:07 3988       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 12:25:07 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 12:25:07 148        DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:48:30 1247       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:48:30 1247       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:48:31 1247       CRITICAL  Flow                 Uncaught exception #1 in line 148 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Fluid_TemplateCache/Apimenti_Translator_Translator_action_index_ed7269578d2a32c93136c8af86adc1989309ff53.php: Notice: Array to string conversion in /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Fluid_TemplateCache/Apimenti_Translator_Translator_action_index_ed7269578d2a32c93136c8af86adc1989309ff53.php line 148 - See also: 20130811134830383ee6.txt
+13-08-11 13:50:02 1251       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 13:50:03 4157       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:50:03 4157       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 13:50:03 4157       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:50:03 4157       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 13:50:05 4157       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 13:50:05 4157       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 13:50:05 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:50:05 1251       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:50:17 1245       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 13:50:18 4162       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:50:18 4162       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 13:50:18 4162       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:50:18 4162       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 13:50:19 4162       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 13:50:19 4162       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 13:50:19 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:50:20 1245       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:50:32 1248       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 13:50:33 4165       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:50:33 4165       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 13:50:33 4165       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:50:33 4165       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 13:50:34 4165       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 13:50:34 4165       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 13:50:34 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:50:34 1248       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:52:54 148        INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 13:52:55 4168       DEBUG     Flow                 Forget class Apimenti\Translator\Service\SongParserService
+13-08-11 13:52:55 4168       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 13:52:55 4168       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-11 13:52:55 4168       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 13:52:57 4168       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\SongParserService".
+13-08-11 13:52:57 4168       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 13:52:57 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:52:57 148        DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:53:35 1246       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 13:53:36 4172       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:53:36 4172       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 13:53:36 4172       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:53:36 4172       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 13:53:37 4172       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 13:53:37 4172       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 13:53:38 1246       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:53:38 1246       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:53:38 1246       CRITICAL  Flow                 Uncaught exception #1 in line 27 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/Apimenti_Translator_Controller_TranslatorController.php: Notice: Undefined index: song in /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/Apimenti_Translator_Controller_TranslatorController.php line 27 - See also: 20130811135335a4db09.txt
+13-08-11 13:53:55 1249       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 13:53:56 4180       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:53:56 4180       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 13:53:56 4180       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:53:56 4180       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 13:53:57 4180       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 13:53:57 4180       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 13:53:58 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:53:58 1249       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:54:28 1251       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 13:54:28 4183       DEBUG     Flow                 Forget class Apimenti\Translator\Service\SongParserService
+13-08-11 13:54:28 4183       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 13:54:28 4183       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-11 13:54:28 4183       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 13:54:30 4183       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\SongParserService".
+13-08-11 13:54:30 4183       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 13:54:30 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:54:30 1251       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:54:44 1250       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 13:54:45 4186       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:54:45 4186       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 13:54:45 4186       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 13:54:45 4186       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 13:54:46 4186       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 13:54:46 4186       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 13:54:46 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:54:46 1250       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 13:57:50 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 13:57:50 1245       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:03:21 1248       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 14:03:22 4205       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 14:03:22 4205       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 14:03:22 4205       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 14:03:22 4205       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 14:03:23 4205       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 14:03:23 4205       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 14:03:24 1248       DEBUG     Flow                 Router route(): Route "Flow :: default" matched the path "apimenti.translator/translator".
+13-08-11 14:03:24 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:03:24 1248       DEBUG     Flow                 Session initialization triggered by TYPO3\Flow\Mvc\FlashMessageContainer->addMessage.
+13-08-11 14:03:24 1248       INFO      Flow                 Session: Started session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz.
+13-08-11 14:04:46 148        DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 82 seconds. (82s)
+13-08-11 14:04:46 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:04:46 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:04:46 148        INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+13-08-11 14:04:52 1246       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 6 seconds. (6s)
+13-08-11 14:04:52 1246       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:04:52 1246       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:05:12 1251       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 20 seconds. (20s)
+13-08-11 14:05:12 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:05:12 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:05:26 1245       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 14 seconds. (14s)
+13-08-11 14:05:26 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:05:26 1245       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:06:13 1249       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 47 seconds. (47s)
+13-08-11 14:06:13 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:06:13 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:06:55 1248       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 42 seconds. (42s)
+13-08-11 14:06:55 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:06:55 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:07:06 1250       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 11 seconds. (11s)
+13-08-11 14:07:06 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:07:06 1250       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:11:37 1251       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 4 minutes. (271s)
+13-08-11 14:11:37 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:11:37 1251       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:14:12 148        DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 2 minutes. (155s)
+13-08-11 14:14:12 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:14:12 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:16:24 1248       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 2 minutes. (132s)
+13-08-11 14:16:24 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:16:24 1248       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:16:32 1247       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 8 seconds. (8s)
+13-08-11 14:16:32 1247       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:16:32 1247       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:16:56 148        DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 24 seconds. (24s)
+13-08-11 14:16:56 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:16:56 148        DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:17:05 1249       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 9 seconds. (9s)
+13-08-11 14:17:05 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:17:05 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:19:11 1246       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 2 minutes. (126s)
+13-08-11 14:19:11 1246       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:19:11 1246       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:22:31 1249       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 14:22:31 4258       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 14:22:31 4258       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 14:22:31 4258       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 14:22:31 4258       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 14:22:33 4258       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 14:22:33 4258       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 14:22:33 1249       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 3 minutes. (202s)
+13-08-11 14:22:33 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "b656048fdd3afd57b76113bd7318809f_GET" matched the path "apimenti.translator/translator".
+13-08-11 14:22:33 1249       DEBUG     Flow                 No CSRF required, safe request
+13-08-11 14:22:36 1248       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 3 seconds. (3s)
+13-08-11 14:22:36 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:22:36 1248       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:23:47 1249       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 71 seconds. (71s)
+13-08-11 14:23:47 1249       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:23:47 1249       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:23:47 1249       INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+13-08-11 14:24:40 1250       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 14:24:41 4271       DEBUG     Flow                 Forget class Apimenti\Translator\Controller\TranslatorController
+13-08-11 14:24:41 4271       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 14:24:41 4271       DEBUG     Flow                 Reflecting class Apimenti\Translator\Controller\TranslatorController
+13-08-11 14:24:41 4271       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 14:24:42 4271       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Controller\TranslatorController".
+13-08-11 14:24:42 4271       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 14:24:42 1250       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 55 seconds. (55s)
+13-08-11 14:24:42 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:24:42 1250       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:25:15 1245       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 33 seconds. (33s)
+13-08-11 14:25:15 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:25:15 1245       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:27:02 1247       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 14:27:03 4284       DEBUG     Flow                 Forget class Apimenti\Translator\Service\SongParserService
+13-08-11 14:27:03 4284       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 14:27:03 4284       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-11 14:27:03 4284       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 14:27:05 4284       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\SongParserService".
+13-08-11 14:27:05 4284       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 14:27:05 1247       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 110 seconds. (110s)
+13-08-11 14:27:05 1247       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:27:05 1247       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:28:37 1250       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 92 seconds. (92s)
+13-08-11 14:28:37 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:28:37 1250       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:28:37 1250       INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+13-08-11 14:29:00 148        DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 23 seconds. (23s)
+13-08-11 14:29:01 148        DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:29:01 148        DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:29:09 1248       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 9 seconds. (9s)
+13-08-11 14:29:09 1248       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:29:09 1248       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:29:09 1248       INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+13-08-11 14:29:23 1250       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 14 seconds. (14s)
+13-08-11 14:29:23 1250       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:29:24 1250       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:29:24 1250       INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+13-08-11 14:31:15 1251       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1 changed files and 0 changed directories.
+13-08-11 14:31:15 4300       DEBUG     Flow                 Forget class Apimenti\Translator\Service\SongParserService
+13-08-11 14:31:15 4300       DEBUG     Flow                 Reflected class names did not match class names to reflect
+13-08-11 14:31:15 4300       DEBUG     Flow                 Reflecting class Apimenti\Translator\Service\SongParserService
+13-08-11 14:31:16 4300       INFO      Flow                 Reflected 1 emerged classes.
+13-08-11 14:31:17 4300       DEBUG     Flow                 Building DI proxy for "Apimenti\Translator\Service\SongParserService".
+13-08-11 14:31:17 4300       DEBUG     Flow                 Found 1 classes whose reflection data was not cached previously.
+13-08-11 14:31:17 1251       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 114 seconds. (114s)
+13-08-11 14:31:17 1251       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:31:17 1251       DEBUG     Flow                 No CSRF required, not authenticated
+13-08-11 14:31:51 1245       DEBUG     Flow                 Session: Resumed session with id xoBdyqTNBXtrEZOafIBMlH2s3JPkkVkz which was inactive for 34 seconds. (34s)
+13-08-11 14:31:51 1245       DEBUG     Flow                 Router route(): A cached Route with the cache identifier "72c28ceee0be7155a7956e91bf20893c_POST" matched the path "apimenti.translator/translator/index".
+13-08-11 14:31:51 1245       DEBUG     Flow                 No CSRF required, not authenticated

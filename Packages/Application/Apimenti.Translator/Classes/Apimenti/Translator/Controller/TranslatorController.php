@@ -16,17 +16,21 @@ class TranslatorController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 	 */
 	protected $songParserService;
    
-    /**
-     * 
-     */
-    public function indexAction() {
-        $URL = 'http://www.cifraclub.com.br/tom-jobim/samba-de-uma-nota-so/';
-        $res = $this->songParserService->parse($URL);
-        if($res['success'] == true) {
-            $this->view->assign('song', $res['song']);
-        } else {
-            die('Erro: '. $res['message']);
+   /**
+    * Song 
+    * @param \Apimenti\Translator\Domain\Dto\Song $song 
+    */
+    public function indexAction(\Apimenti\Translator\Domain\Dto\Song $song = null) {
+        
+        if($song != null) {
+            $res = $this->songParserService->parse($song->getSongURL());
+            if($res['success'] == true) {
+                $this->view->assign('song', $res['song']);
+            } else {
+                $this->addFlashMessage($res['message'], 'danger');
+            }
         }
+        
     }
 }
 ?>
