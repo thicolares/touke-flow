@@ -20,7 +20,7 @@ class TranslatorController_Original extends \TYPO3\Flow\Mvc\Controller\ActionCon
      * 
      */
     public function indexAction() {
-        $URL = 'http://www.cifraclub.com.br/legiao-urbana/que-pais-e-esse/';
+        $URL = 'http://www.cifraclub.com.br/tom-jobim/samba-de-uma-nota-so/';
         $res = $this->songParserService->parse($URL);
         if($res['success'] == true) {
             $this->view->assign('song', $res['song']);

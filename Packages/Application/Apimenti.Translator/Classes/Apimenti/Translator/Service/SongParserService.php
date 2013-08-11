@@ -89,13 +89,6 @@ class SongParserService {
     */
 	var $songChords = array();
    
-   
-   /**
-    * Normalized Song Chords
-    * @var array 
-    */
-   var $songNormalizedChords = array();
-   
    /**
     * Serial Song Chords
     * @var string
@@ -223,7 +216,8 @@ class SongParserService {
    private function pullNormalizedChords() {
 
         $rootNote = "";
-        foreach ($this->songChords as $chord) {
+        $newSongChords = array();
+        foreach ($this->songChords as &$chord) {
             // Grabing the root note. ex.: C, D#, Gb etc. 
             if (preg_match(self::REG_EXP_ROOT_NOTE, $chord, $rootNote)) {
                 $chordRootNote = $rootNote[0]; //got the root note
@@ -252,19 +246,11 @@ class SongParserService {
             // $translatedBassNote = str_replace("/", "_", $bassNote);
             // translating to a known notation
 
-            $this->songNormalizedChords[] = array(
+            $chord = array(
+                'chordOriginal' => $chord,
                 'chordRootNote' => $chordRootNote,
-                'chordFormula' => $chordFormula
+                'chordFormula'  => $chordFormula
             );
-
-
-//       		$translatedChordFormula = strtr($translatedChordFormula, $this->notations);		
-//       		// this is the final chord (with bass)
-//       		// Db => C#, Eb => D# etc.
-//       		//$finalChord = strtr($chordRootNote.$translatedChordFormula.$translatedBassNote, $this->rootNotes);
-//   		
-//       		// this is the final chord (without bass)
-//       		$finalChord = strtr($chordRootNote . $translatedChordFormula, $this->rootNotes);// Db => C#, Eb => D# 
         }
         
         return $this->getSuccessArray();
@@ -311,8 +297,7 @@ class SongParserService {
                     $this->artistName,
                     $this->songLyric,
                     $this->songChords,
-                    $this->serialSongChords,
-                    $this->songNormalizedChords
+                    $this->serialSongChords
                 )
             );
         } else {
