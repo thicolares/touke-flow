@@ -1,0 +1,37 @@
+Uncaught exception #1237823695 in line 498 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: Argument "chordOriginal" was not registered.
+
+31 TYPO3\Fluid\Core\Parser\TemplateParser_Original::abortIfUnregisteredArgumentsExist(array|4|, array|3|)
+30 TYPO3\Fluid\Core\Parser\TemplateParser_Original::initializeViewHelperAndAddItToStack(TYPO3\Fluid\Core\Parser\ParsingState, "wget", "ChordBox", array|3|)
+29 TYPO3\Fluid\Core\Parser\TemplateParser_Original::openingViewHelperTagHandler(TYPO3\Fluid\Core\Parser\ParsingState, "wget", "ChordBox", " chordOriginal="{chord.chordOriginal}" chordRootNote="{chord.chordRootNote}" chordFormula="{chord.chordFormula}" ", TRUE)
+28 TYPO3\Fluid\Core\Parser\TemplateParser_Original::buildObjectTree(array|6|, 2)
+27 TYPO3\Fluid\Core\Parser\TemplateParser_Original::parse("{namespace wget=Apimenti\Translator\ViewHelpers}
+
+<f:for each="{song.songChords}" as="chord">
+    <wget:ChordBox chordOriginal="{chord.chordOriginal}" chordRootNote="{chord.chordRootNote}" chordFormula="{chord.chordFormula}" />
+</f:for>")
+26 TYPO3\Fluid\View\AbstractTemplateView::renderPartial("ChordTable", NULL, array|2|)
+25 TYPO3\Fluid\ViewHelpers\RenderViewHelper_Original::render(NULL, "ChordTable", array|1|, FALSE)
+24 call_user_func_array(array|2|, array|4|)
+23 TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper::callRenderMethod()
+22 TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper::initializeArgumentsAndRender()
+21 FluidCache_Apimenti_Translator_Translator_action_index_e3f188d0d47de78bb4de8f77e83b1ff5ba592b1a::section_4f9be057f0ea5d2ba72fd2c810e8d7b9aa98b469(TYPO3\Fluid\Core\Rendering\RenderingContext)
+20 TYPO3\Fluid\View\AbstractTemplateView::renderSection("Content", array|1|, FALSE)
+19 TYPO3\Fluid\ViewHelpers\RenderViewHelper_Original::render("Content", NULL, array|0|, FALSE)
+18 call_user_func_array(array|2|, array|4|)
+17 TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper::callRenderMethod()
+16 TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper::initializeArgumentsAndRender()
+15 FluidCache_Apimenti_Translator_Translator_layout_Default_2df426ba0a8f755d91ebf88ad8ccfd8d4f6a6b64::render(TYPO3\Fluid\Core\Rendering\RenderingContext)
+14 TYPO3\Fluid\View\AbstractTemplateView::render()
+13 TYPO3\Flow\Mvc\Controller\ActionController_Original::callActionMethod()
+12 TYPO3\Flow\Mvc\Controller\ActionController_Original::processRequest(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+11 TYPO3\Flow\Mvc\Dispatcher_Original::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+10 TYPO3\Flow\Mvc\Dispatcher::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+9 call_user_func_array(array|2|, array|2|)
+8 TYPO3\Flow\Mvc\Dispatcher::Flow_Aop_Proxy_invokeJoinPoint(TYPO3\Flow\Aop\JoinPoint)
+7 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+6 TYPO3\Flow\Security\Aspect\RequestDispatchingAspect_Original::blockIllegalRequestsAndForwardToAuthenticationEntryPoints(TYPO3\Flow\Aop\JoinPoint)
+5 TYPO3\Flow\Aop\Advice\AroundAdvice::invoke(TYPO3\Flow\Aop\JoinPoint)
+4 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+3 TYPO3\Flow\Mvc\Dispatcher::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+2 TYPO3\Flow\Http\RequestHandler::handleRequest()
+1 TYPO3\Flow\Core\Bootstrap::run()
