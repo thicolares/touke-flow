@@ -20,7 +20,7 @@ class TranslatorController extends \TYPO3\Flow\Mvc\Controller\ActionController {
      * 
      */
     public function indexAction() {
-        $URL = 'http://www.cifraclub.com.br/the-beatles/hey-jude/';
+        $URL = 'http://www.cifraclub.com.br/legiao-urbana/que-pais-e-esse/';
         $res = $this->songParserService->parse($URL);
         if($res['success'] == true) {
             $this->view->assign('song', $res['song']);

@@ -122,7 +122,7 @@ class SongParserService {
         curl_setopt($ch, CURLOPT_ENCODING, 'UTF-8');
 
         // grab URL and pass it to the browser
-        $HTML = utf8_encode(curl_exec($ch));
+        $HTML = curl_exec($ch);
 
         // close cURL resource, and free up system resources
         curl_close($ch);

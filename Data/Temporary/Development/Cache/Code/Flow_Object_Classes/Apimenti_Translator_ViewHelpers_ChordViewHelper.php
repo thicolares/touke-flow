@@ -70,6 +70,11 @@ class ChordViewHelper_Original extends \TYPO3\Fluid\Core\ViewHelper\AbstractCond
        		// this is the final chord (without bass)
        		$finalChord = strtr($chordRootNote . $translatedChordFormula, $this->rootNotes);// Db => C#, Eb => D# 
    
+            
+            
+            
+            
+            
        		// number of variations
 			if(isset($this->allChords[$finalChord])){
 				$variations = $this->allChords[$finalChord]; 
