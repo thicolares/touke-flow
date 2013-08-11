@@ -51,7 +51,13 @@ class Song_Original {
     */
 	var $serialSongChords;
    
-   function __construct($songURL, $songHTML, $songTitle, $artistName, $songLyric, $songChords, $serialSongChords) {
+   /**
+    * Song Normalized Chords
+    * @var array
+    */
+   var $songNormalizedChords;
+   
+   function __construct($songURL, $songHTML, $songTitle, $artistName, $songLyric, $songChords, $serialSongChords, $songNormalizedChords) {
        $this->songURL = $songURL;
        $this->songHTML = $songHTML;
        $this->songTitle = $songTitle;
@@ -59,6 +65,7 @@ class Song_Original {
        $this->songLyric = $songLyric;
        $this->songChords = $songChords;
        $this->serialSongChords = $serialSongChords;
+       $this->songNormalizedChords = $songNormalizedChords;
    }
 
    
@@ -183,6 +190,7 @@ class Song extends Song_Original implements \TYPO3\Flow\Object\Proxy\ProxyInterf
 		if (!array_key_exists(4, $arguments)) $arguments[4] = NULL;
 		if (!array_key_exists(5, $arguments)) $arguments[5] = NULL;
 		if (!array_key_exists(6, $arguments)) $arguments[6] = NULL;
+		if (!array_key_exists(7, $arguments)) $arguments[7] = NULL;
 		if (!array_key_exists(0, $arguments)) throw new \TYPO3\Flow\Object\Exception\UnresolvedDependenciesException('Missing required constructor argument $songURL in class ' . __CLASS__ . '. Note that constructor injection is only support for objects of scope singleton (and this is not a singleton) – for other scopes you must pass each required argument to the constructor yourself.', 1296143788);
 		if (!array_key_exists(1, $arguments)) throw new \TYPO3\Flow\Object\Exception\UnresolvedDependenciesException('Missing required constructor argument $songHTML in class ' . __CLASS__ . '. Note that constructor injection is only support for objects of scope singleton (and this is not a singleton) – for other scopes you must pass each required argument to the constructor yourself.', 1296143788);
 		if (!array_key_exists(2, $arguments)) throw new \TYPO3\Flow\Object\Exception\UnresolvedDependenciesException('Missing required constructor argument $songTitle in class ' . __CLASS__ . '. Note that constructor injection is only support for objects of scope singleton (and this is not a singleton) – for other scopes you must pass each required argument to the constructor yourself.', 1296143788);
@@ -190,6 +198,7 @@ class Song extends Song_Original implements \TYPO3\Flow\Object\Proxy\ProxyInterf
 		if (!array_key_exists(4, $arguments)) throw new \TYPO3\Flow\Object\Exception\UnresolvedDependenciesException('Missing required constructor argument $songLyric in class ' . __CLASS__ . '. Note that constructor injection is only support for objects of scope singleton (and this is not a singleton) – for other scopes you must pass each required argument to the constructor yourself.', 1296143788);
 		if (!array_key_exists(5, $arguments)) throw new \TYPO3\Flow\Object\Exception\UnresolvedDependenciesException('Missing required constructor argument $songChords in class ' . __CLASS__ . '. Note that constructor injection is only support for objects of scope singleton (and this is not a singleton) – for other scopes you must pass each required argument to the constructor yourself.', 1296143788);
 		if (!array_key_exists(6, $arguments)) throw new \TYPO3\Flow\Object\Exception\UnresolvedDependenciesException('Missing required constructor argument $serialSongChords in class ' . __CLASS__ . '. Note that constructor injection is only support for objects of scope singleton (and this is not a singleton) – for other scopes you must pass each required argument to the constructor yourself.', 1296143788);
+		if (!array_key_exists(7, $arguments)) throw new \TYPO3\Flow\Object\Exception\UnresolvedDependenciesException('Missing required constructor argument $songNormalizedChords in class ' . __CLASS__ . '. Note that constructor injection is only support for objects of scope singleton (and this is not a singleton) – for other scopes you must pass each required argument to the constructor yourself.', 1296143788);
 		call_user_func_array('parent::__construct', $arguments);
 	}
 

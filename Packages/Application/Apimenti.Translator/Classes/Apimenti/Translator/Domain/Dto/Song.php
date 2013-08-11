@@ -51,7 +51,13 @@ class Song {
     */
 	var $serialSongChords;
    
-   function __construct($songURL, $songHTML, $songTitle, $artistName, $songLyric, $songChords, $serialSongChords) {
+   /**
+    * Song Normalized Chords
+    * @var array
+    */
+   var $songNormalizedChords;
+   
+   function __construct($songURL, $songHTML, $songTitle, $artistName, $songLyric, $songChords, $serialSongChords, $songNormalizedChords) {
        $this->songURL = $songURL;
        $this->songHTML = $songHTML;
        $this->songTitle = $songTitle;
@@ -59,6 +65,7 @@ class Song {
        $this->songLyric = $songLyric;
        $this->songChords = $songChords;
        $this->serialSongChords = $serialSongChords;
+       $this->songNormalizedChords = $songNormalizedChords;
    }
 
    

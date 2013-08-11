@@ -35,6 +35,16 @@ class SongParserService {
      * Regular Expression to extract clean chords
      */
     const REG_EXP_CLEAN_CHORDS      = '/(\<b\>|\<\/b\>)/s';
+
+    /**
+     * Regular Expression to extract the root note
+     */
+    const REG_EXP_ROOT_NOTE = '/^[A-G]#?b?/s'; 
+
+    /**
+     * Regular Expression to extract the bass note
+     */
+    const REG_EXP_BASS = '/\/[A-G]#?b?/s';
     
 	// do not remove tabs! Lets hide by using css and transpose someday
 	//$regexp_tab 			= '/\<span calss\=[\"]tablatura[\"].*?\>(.*?)\<\span\>/s';
@@ -75,9 +85,16 @@ class SongParserService {
    
    /**
     * Song Chords
-    * @var string
+    * @var array
     */
 	var $songChords = array();
+   
+   
+   /**
+    * Normalized Song Chords
+    * @var array 
+    */
+   var $songNormalizedChords = array();
    
    /**
     * Serial Song Chords
@@ -200,6 +217,61 @@ class SongParserService {
 	}
    
    /**
+    * Pull Normalized Chords
+    * @return void 
+    */
+   private function pullNormalizedChords() {
+
+        $rootNote = "";
+        foreach ($this->songChords as $chord) {
+            // Grabing the root note. ex.: C, D#, Gb etc. 
+            if (preg_match(self::REG_EXP_ROOT_NOTE, $chord, $rootNote)) {
+                $chordRootNote = $rootNote[0]; //got the root note
+            }
+
+            // Remove the root note from the chord and get the chord notation formula
+            $chordFormula = preg_replace(self::REG_EXP_ROOT_NOTE, '', $chord);
+
+            /**
+             * @todo treat bass note kind! They say "just remove it for ukulele", but it could be better!
+             * for now, let's remove the bass note from chord
+             */
+            $bassNote = "";
+            if (preg_match(self::REG_EXP_BASS, $chordFormula, $bass)) { //if exists		
+                $bassNote = $bass[0]; // without slash / 
+                $chordFormula = preg_replace(self::REG_EXP_BASS, '', $chordFormula); //remove it from formula
+            }
+
+            // Slash (/) becomes underline (_)
+            $chordFormula = str_replace("/", "_", $chordFormula);
+            // $translatedChordFormula = str_replace("#", "_srp_", $chordFormula);
+            // $translatedChordFormula = str_replace("(", "_opr_", $chordFormula);
+            // $translatedChordFormula = str_replace(")", "_cpr_", $chordFormula);
+            // $translatedChordFormula = str_replace("-", "_mns_", $chordFormula);
+            // $translatedChordFormula = str_replace("+", "_pls_", $chordFormula);
+            // $translatedBassNote = str_replace("/", "_", $bassNote);
+            // translating to a known notation
+
+            $this->songNormalizedChords[] = array(
+                'chordRootNote' => $chordRootNote,
+                'chordFormula' => $chordFormula
+            );
+
+
+//       		$translatedChordFormula = strtr($translatedChordFormula, $this->notations);		
+//       		// this is the final chord (with bass)
+//       		// Db => C#, Eb => D# etc.
+//       		//$finalChord = strtr($chordRootNote.$translatedChordFormula.$translatedBassNote, $this->rootNotes);
+//   		
+//       		// this is the final chord (without bass)
+//       		$finalChord = strtr($chordRootNote . $translatedChordFormula, $this->rootNotes);// Db => C#, Eb => D# 
+        }
+        
+        return $this->getSuccessArray();
+    }
+
+
+   /**
     * Run Pullers
     * @return array 
     */
@@ -208,7 +280,8 @@ class SongParserService {
         $pullers = array(
             'pullSongTitle',
             'pullArtistName',
-            'pullLyricsAndChords'
+            'pullLyricsAndChords',
+            'pullNormalizedChords'
         );
 
         $res = $this->getErrorArray('Não foi possível extrair as informações da música');
@@ -238,7 +311,8 @@ class SongParserService {
                     $this->artistName,
                     $this->songLyric,
                     $this->songChords,
-                    $this->serialSongChords
+                    $this->serialSongChords,
+                    $this->songNormalizedChords
                 )
             );
         } else {
