@@ -8,6 +8,9 @@
 	$application = new \TYPO3\Surf\Application\TYPO3\Flow();
 	$application->setDeploymentPath('/var/www/web/touke/htdocs');
 	$application->setOption('repositoryUrl', 'https://github.com/colares/touke-flow.git');
+   $application->setOption('composerCommandPath', '/usr/local/bin/composer');
+   //   $application->setOption('composerCommandPath', 'php /var/www/vhosts/neos.typo3.org/home/composer.phar');
+   
 	$application->addNode($node);
 
 	$deployment->addApplication($application);

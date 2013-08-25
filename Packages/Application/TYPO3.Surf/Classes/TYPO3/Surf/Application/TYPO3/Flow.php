@@ -69,8 +69,7 @@ class Flow extends \TYPO3\Surf\Application\BaseApplication {
 
 		$workflow->defineTask('typo3.surf:composer:localinstall', 'typo3.surf:composer:install', array(
 			'nodeName' => 'localhost',
-			'useApplicationWorkspace' => TRUE,
-          'composerCommandPath' => '/usr/local/bin/composer'
+			'useApplicationWorkspace' => TRUE
 		));
 
 		if ($packageMethod === 'git') {
