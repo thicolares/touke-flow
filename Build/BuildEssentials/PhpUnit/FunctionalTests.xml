@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<phpunit strict="true"
+		bootstrap="FunctionalTestBootstrap.php"
+		convertErrorsToExceptions="true"
+		convertNoticesToExceptions="true"
+		convertWarningsToExceptions="true"
+		timeoutForSmallTests="0">
+	<testsuites>
+		<testsuite name="All tests">
+			<directory>../../../Packages/*/*/Tests/Functional</directory>
+			<exclude>../../../Packages/Libraries</exclude>
+		</testsuite>
+	</testsuites>
+	<filter>
+		<whitelist addUncoveredFilesFromWhitelist="true">
+			<directory>../../../Data/Temporary/Testing/Cache/Flow_Object_Classes</directory>
+		</whitelist>
+	</filter>
+	<logging>
+		<log type="junit" target="../../Reports/FunctionalTests.xml" logIncompleteSkipped="false"/>
+		<log type="testdox-text" target="../../Reports/FunctionalTestDox.txt"/>
+	</logging>
+	<php>
+		<env name="FLOW_REWRITEURLS" value="1"/>
+	</php>
+</phpunit>
