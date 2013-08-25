@@ -1,0 +1,8 @@
+## YAML Template.
+-
+  name: 'Homepage'
+  uriPattern: ''
+  defaults:
+    '@package': 'Apimenti.Translator'
+    '@controller': 'Translator'
+    '@action':     'index'

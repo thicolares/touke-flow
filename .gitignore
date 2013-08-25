@@ -1,0 +1,9 @@
+/Configuration/Production/IncludeCachedConfigurations.php
+/Configuration/PackageStates.php
+Configuration/Development/Settings.yaml
+Configuration/Production/Settings.yaml
+Configuration/Settings.yaml
+/Data/
+/Web/_Resources/
+*~
+/nbproject/private/
