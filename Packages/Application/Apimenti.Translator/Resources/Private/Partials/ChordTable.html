@@ -1,0 +1,9 @@
+{namespace wget=Apimenti\Translator\ViewHelpers}
+
+<div class="row">
+    <div class="col-12">
+        <f:for each="{song.songChords}" as="chord">
+            <wget:ChordBox chordOriginal="{chord.chordOriginal}" chordRootNote="{chord.chordRootNote}" chordFormula="{chord.chordFormula}" />
+        </f:for>
+      </div>
+</div>
