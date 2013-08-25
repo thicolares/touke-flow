@@ -25,6 +25,14 @@
 #
 
 -
+  name: 'Homepage'
+  uriPattern: ''
+  defaults:
+    '@package': 'Apimenti.Translator'
+    '@controller': 'Translator'
+    '@action':     'index'
+
+-
   name: 'Flow'
   uriPattern: '<FlowSubroutes>'
   defaults:

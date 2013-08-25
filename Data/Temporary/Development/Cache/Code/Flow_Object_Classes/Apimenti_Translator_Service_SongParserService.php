@@ -159,7 +159,7 @@ class SongParserService_Original {
 			else
 	  	        return $this->getSuccessArray();
 	  	} else {
-          $msg = "<strong>ÊTA! Tem certeza de que <em>\"$this->songURL\"</em> é o endereço completo de uma música cifrada do site <strong>www.cifraclub.com.br</strong>?";
+          $msg = "ÊTA! Tem certeza de que <em>\"$this->songURL\"</em> é um endereço de uma música cifrada do site www.cifraclub.com.br?";
           return $this->getErrorArray($msg);
 	  	}
 	}

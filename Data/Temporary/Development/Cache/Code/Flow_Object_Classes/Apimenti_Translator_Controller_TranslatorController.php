@@ -21,7 +21,6 @@ class TranslatorController_Original extends \TYPO3\Flow\Mvc\Controller\ActionCon
     * @param \Apimenti\Translator\Domain\Dto\Song $song 
     */
     public function indexAction(\Apimenti\Translator\Domain\Dto\Song $song = null) {
-        
         if($song != null) {
             $res = $this->songParserService->parse($song->getSongURL());
             if($res['success'] == true) {

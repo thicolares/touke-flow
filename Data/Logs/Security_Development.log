@@ -27,3 +27,16 @@
 13-08-11 14:29:24 1250       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
 13-08-11 14:31:17 1251       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
 13-08-11 14:31:51 1245       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-12 14:16:35 1251       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-14 20:53:59 720        127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-14 20:55:15 144        127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-14 20:57:55 739        127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-14 20:59:49 720        127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-25 14:49:02 1866       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-25 14:51:34 1861       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-25 15:35:08 149        127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-25 15:38:46 1870       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-25 15:38:54 1870       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-25 15:40:54 149        127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-25 15:41:07 1871       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
+13-08-25 15:42:21 1870       127.0.0.1      NOTICE    Flow                 Authentication failed: "The security context contained no tokens which could be authenticated." #1258721059
