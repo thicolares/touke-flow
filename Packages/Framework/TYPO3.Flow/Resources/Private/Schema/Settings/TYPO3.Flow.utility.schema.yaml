@@ -1,9 +1,0 @@
-type: dictionary
-additionalProperties: FALSE
-properties:
-  'environment':
-    type: dictionary
-    required: TRUE
-    additionalProperties: FALSE
-    properties:
-      'temporaryDirectoryBase': { type: string, required: TRUE }
