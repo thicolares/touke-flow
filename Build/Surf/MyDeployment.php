@@ -17,9 +17,9 @@ $deployment->addApplication($application);
 /**
  * reenabled it JUST after create a DB setup file
  */
-//$workflow = new \TYPO3\Surf\Domain\Model\SimpleWorkflow();
-//$deployment->getWorkflow($workflow);
-$workflow = $deployment->getWorkflow();
+$workflow = new \TYPO3\Surf\Domain\Model\SimpleWorkflow();
+$deployment->getWorkflow($workflow);
+//$workflow = $deployment->getWorkflow();
 $deployment->onInitialize(function() use ($workflow, $application) {
 	$workflow->removeTask('typo3.surf:typo3:flow:migrate');
 });
