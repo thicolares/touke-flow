@@ -1,6 +1,5 @@
 .idea/*
 /Build/Reports/
-/Build/Surf/MyDeployment/Configuration/*
 /Configuration/Production/IncludeCachedConfigurations.php
 /Configuration/PackageStates.php
 Configuration/Development/Settings.yaml
