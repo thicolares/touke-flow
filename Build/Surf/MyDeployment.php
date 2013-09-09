@@ -10,16 +10,19 @@
 	$application->setOption('repositoryUrl', 'https://github.com/colares/touke-flow.git');
    $application->setOption('composerCommandPath', '/usr/local/bin/composer');
    $application->setOption('keepReleases', 2);
-   
-   /**
-    * renenabled it JUST after create a DB setup file
-    */
-   $application->setOption('removeTask', 'migrate');
 
    //   $application->setOption('composerCommandPath', 'php /var/www/vhosts/neos.typo3.org/home/composer.phar');
    
 	$application->addNode($node);
 
 	$deployment->addApplication($application);
+   
+   /**
+    * renenabled it JUST after create a DB setup file
+    */
+   $workflow = new \TYPO3\Surf\Domain\Model\SimpleWorkflow();
+   $deployment->onInitialize(function() use ($workflow, $application) {
+       $workflow->removeTask('typo3.surf:typo3:flow:migrate');
+   });
 
 ?>
