@@ -1,0 +1,1 @@
+../Packages/Libraries/doctrine/orm/bin/doctrine.php
