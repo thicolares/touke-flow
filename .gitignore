@@ -1,4 +1,6 @@
+.idea/*
 /Build/Reports/
+/Build/*
 /Configuration/Production/IncludeCachedConfigurations.php
 /Configuration/PackageStates.php
 Configuration/Development/Settings.yaml
