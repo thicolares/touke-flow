@@ -1,0 +1,64 @@
+Uncaught exception #1224485398 in line 447 of /Library/WebServer/Documents/touke-flow/Data/Temporary/Development/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: Templating tags not properly nested. Expected: TYPO3\Fluid\ViewHelpers\FormViewHelper; Actual: TYPO3\Fluid\ViewHelpers\SectionViewHelper
+
+17 TYPO3\Fluid\Core\Parser\TemplateParser_Original::closingViewHelperTagHandler(TYPO3\Fluid\Core\Parser\ParsingState, "f", "section")
+16 TYPO3\Fluid\Core\Parser\TemplateParser_Original::buildObjectTree(array|22|, 2)
+15 TYPO3\Fluid\Core\Parser\TemplateParser_Original::parse("{namespace wget=Apimenti\Translator\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="Title">
+    
+</f:section>
+
+<f:section name="Content">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-3">
+                <h2 style="margin:0px; padding:0px"><span class="label label-success">ToUke</span> <small>Traduz pra ukulelê.</small></h2>
+                
+            </div>
+            <div class="col-lg-9">
+                <f:form action="index" object="{song}" name="song" id="song" class="form-inline">
+                    <f:form.textfield name="song" property="song.songURL" class="form-control col-4" placeholder="Cole o endereço de uma música no http://www.cifraclub.com.br. Depois aperte a tecla ENTER."/>
+                </form>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">                
+                <h2>{song.songTitle} <small>{song.artistName}</small></h2>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-3">
+                <f:render partial="ChordTable" arguments="{song: song}" />
+            </div>
+            <div class="col-lg-9">
+                <pre>
+                    <f:format.raw value="{song.songLyric}" />
+                </pre>             
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12" style="text-align: right">                
+                <small><em class="text-muted">Apimenti ToUke <a href="https://github.com/colares/touke-flow/wiki/Vers%C3%A3o-<wget:CurrentVersion />"> v<wget:CurrentVersion /></a></em></small>
+            </div>
+        </div>
+    </div>
+</f:section>")
+14 TYPO3\Fluid\View\AbstractTemplateView::render()
+13 TYPO3\Flow\Mvc\Controller\ActionController_Original::callActionMethod()
+12 TYPO3\Flow\Mvc\Controller\ActionController_Original::processRequest(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+11 TYPO3\Flow\Mvc\Dispatcher_Original::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+10 TYPO3\Flow\Mvc\Dispatcher::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+9 call_user_func_array(array|2|, array|2|)
+8 TYPO3\Flow\Mvc\Dispatcher::Flow_Aop_Proxy_invokeJoinPoint(TYPO3\Flow\Aop\JoinPoint)
+7 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+6 TYPO3\Flow\Security\Aspect\RequestDispatchingAspect_Original::blockIllegalRequestsAndForwardToAuthenticationEntryPoints(TYPO3\Flow\Aop\JoinPoint)
+5 TYPO3\Flow\Aop\Advice\AroundAdvice::invoke(TYPO3\Flow\Aop\JoinPoint)
+4 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+3 TYPO3\Flow\Mvc\Dispatcher::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+2 TYPO3\Flow\Http\RequestHandler::handleRequest()
+1 TYPO3\Flow\Core\Bootstrap::run()

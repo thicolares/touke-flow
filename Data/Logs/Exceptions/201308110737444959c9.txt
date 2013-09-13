@@ -1,0 +1,43 @@
+Uncaught exception #1355480641 in line 227 of /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php: Execution of subprocess failed with exit code 255 and output:
+
+
+Fatal error: Cannot redeclare class Apimenti\Translator\Domain\Model\Chord2 in /Library/WebServer/Documents/touke-flow/Packages/Application/Apimenti.Translator/Classes/Apimenti/Translator/Domain/Chord.php on line 16
+
+Call Stack:
+    0.0005     238984   1. {main}() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Scripts/flow.php:0
+    0.0094     983136   2. TYPO3\Flow\Core\Bootstrap->run() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Scripts/flow.php:55
+    0.0845    1438144   3. TYPO3\Flow\Cli\CommandRequestHandler->handleRequest() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Bootstrap.php:113
+    0.0845    1438696   4. TYPO3\Flow\Cli\CommandRequestHandler->boot() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Cli/CommandRequestHandler.php:91
+    0.0851    1471472   5. TYPO3\Flow\Core\Booting\Sequence->invoke() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Cli/CommandRequestHandler.php:147
+    0.0851    1471536   6. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:85
+    0.0855    1492608   7. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.1594    2131208   8. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.1772    2477072   9. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.1797    2674600  10. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.3128    3923016  11. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.3191    4464848  12. TYPO3\Flow\Core\Booting\Sequence->invokeStep() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:105
+    0.3191    4464848  13. TYPO3\Flow\Core\Booting\Step->__invoke() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Sequence.php:101
+    0.3191    4464896  14. call_user_func() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Step.php:49
+    0.3191    4464928  15. TYPO3\Flow\Core\Booting\Scripts::initializeObjectManagerCompileTimeFinalize() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Step.php:49
+    0.3192    4466352  16. TYPO3\Flow\Object\CompileTimeObjectManager->initialize() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php:302
+    0.6098   23852688  17. TYPO3\Flow\Object\Configuration\ConfigurationBuilder->buildObjectConfigurations() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/CompileTimeObjectManager.php:123
+    0.8637   40122728  18. interface_exists() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/Configuration/ConfigurationBuilder.php:75
+    0.8638   40123152  19. TYPO3\Flow\Core\ClassLoader->loadClass() /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Object/Configuration/ConfigurationBuilder.php:0
+    0.8647   40284480  20. include('/Library/WebServer/Documents/touke-flow/Packages/Application/Apimenti.Translator/Classes/Apimenti/Translator/Domain/Chord.php') /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/ClassLoader.php:121
+
+
+The erroneous command was:
+FLOW_ROOTPATH='/Library/WebServer/Documents/touke-flow/' FLOW_CONTEXT='Development' XDEBUG_CONFIG='idekey=FLOW_SUBREQUEST remote_port=9001' "/opt/local/bin/php" -c '/opt/local/etc/php54/php.ini' '/Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/../../../../Scripts/flow.php' 'typo3.flow:core:compile'
+
+12 TYPO3\Flow\Core\Booting\Scripts::executeCommand("typo3.flow:core:compile", array|15|)
+11 TYPO3\Flow\Core\Booting\Scripts::initializeProxyClasses(TYPO3\Flow\Core\Bootstrap)
+10 call_user_func(array|2|, TYPO3\Flow\Core\Bootstrap)
+9 TYPO3\Flow\Core\Booting\Step::__invoke(TYPO3\Flow\Core\Bootstrap)
+8 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+7 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+6 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+5 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+4 TYPO3\Flow\Core\Booting\Sequence::invoke(TYPO3\Flow\Core\Bootstrap)
+3 TYPO3\Flow\Http\RequestHandler::boot()
+2 TYPO3\Flow\Http\RequestHandler::handleRequest()
+1 TYPO3\Flow\Core\Bootstrap::run()

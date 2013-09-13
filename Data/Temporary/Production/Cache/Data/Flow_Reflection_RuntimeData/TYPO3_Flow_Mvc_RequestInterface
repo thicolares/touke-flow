@@ -1,0 +1,1 @@
+a:3:{i:6;b:1;i:8;a:5:{s:13:"setDispatched";a:2:{i:12;i:3;i:13;a:1:{s:4:"flag";a:3:{i:16;i:0;i:21;b:1;i:18;s:7:"boolean";}}}s:12:"isDispatched";a:1:{i:12;i:3;}s:23:"getControllerObjectName";a:1:{i:12;i:3;}s:14:"getMainRequest";a:1:{i:12;i:3;}s:13:"isMainRequest";a:1:{i:12;i:3;}}i:1;a:2:{s:22:"TYPO3\Flow\Cli\Request";b:1;s:28:"TYPO3\Flow\Mvc\ActionRequest";b:1;}}

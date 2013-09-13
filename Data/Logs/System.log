@@ -1,0 +1,16 @@
+13-08-25 21:02:23 3771       NOTICE    Flow                 Locking site. Lock file: /Library/WebServer/Documents/touke-flow/Data/Temporary/Production/Flow.lock
+13-08-25 21:02:24 3771       INFO      Flow                 Aspect classes have been modified, flushing the whole proxy classes cache.
+13-08-25 21:02:24 3771       INFO      Flow                 Domain model changes have been detected, triggering Doctrine 2 proxy rebuilding.
+13-08-25 21:02:24 3771       INFO      Flow                 File Monitor "Flow_ClassFiles" detected 1686 changed files and 15 changed directories.
+13-08-25 21:02:24 3771       INFO      Flow                 A configuration file matching the pattern "/Policy\.yaml/" has been changed, flushing related cache "Flow_Security_Policy"
+13-08-25 21:02:24 3771       INFO      Flow                 A configuration file matching the pattern "/Routes([^\/]*)\.yaml/" has been changed, flushing related cache "Flow_Mvc_Routing_FindMatchResults"
+13-08-25 21:02:24 3771       INFO      Flow                 A configuration file matching the pattern "/Routes([^\/]*)\.yaml/" has been changed, flushing related cache "Flow_Mvc_Routing_Resolve"
+13-08-25 21:02:24 3771       INFO      Flow                 The configuration has changed, triggering an AOP proxy class rebuild.
+13-08-25 21:02:24 3771       INFO      Flow                 File Monitor "Flow_ConfigurationFiles" detected 22 changed files and 5 changed directories.
+13-08-25 21:02:24 3771       INFO      Flow                 The localization files have changed, thus flushing the I18n XML model cache.
+13-08-25 21:02:24 3771       INFO      Flow                 File Monitor "Flow_TranslationFiles" detected 8 changed files and 2 changed directories.
+13-08-25 21:02:33 3771       INFO      Flow                 Reflected 639 emerged classes.
+13-08-25 21:02:34 3771       INFO      Flow                 Aspects have been modified, therefore rebuilding all target classes.
+13-08-25 21:02:46 3771       INFO      Flow                 Built and froze reflection runtime caches (667 classes).
+13-08-25 21:02:46 3771       NOTICE    Flow                 Unlocked site.
+13-08-25 21:02:48 3769       CRITICAL  Flow                 Uncaught exception #2002 in line 36 of /Library/WebServer/Documents/touke-flow/Packages/Libraries/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php: SQLSTATE[HY000] [2002] Connection refused - See also: 201308252102230b006f.txt

@@ -1,0 +1,33 @@
+Uncaught exception #1355480641 in line 227 of /Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php: Execution of subprocess failed with exit code 1 and output:
+
+Uncaught Exception
+  [Semantical Error] The annotation "@Flow\Inject" in property
+  Apimenti\Translator\ViewHelpers\ChordBoxViewHelper::$songParserService
+  was never imported. Did you maybe forget to add a "use" statement for
+  this annotation?
+
+More Information
+  Exception code      #0
+  File                /Library/WebServer/Documents/touke-flow/Packages/Libraries/doctrine/common/lib/Doctrine/Common/Annotations/AnnotationException.php line 52
+
+
+The erroneous command was:
+FLOW_ROOTPATH='/Library/WebServer/Documents/touke-flow/' FLOW_CONTEXT='Development' XDEBUG_CONFIG='idekey=FLOW_SUBREQUEST remote_port=9001' "/opt/local/bin/php" -c '/opt/local/etc/php54/php.ini' '/Library/WebServer/Documents/touke-flow/Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/../../../../Scripts/flow.php' 'typo3.flow:core:compile'
+
+17 TYPO3\Flow\Core\Booting\Scripts::executeCommand("typo3.flow:core:compile", array|15|)
+16 TYPO3\Flow\Core\Booting\Scripts::initializeProxyClasses(TYPO3\Flow\Core\Bootstrap)
+15 TYPO3\Flow\Core\Booting\Scripts::recompileClasses(TYPO3\Flow\Core\Bootstrap)
+14 call_user_func(array|2|, TYPO3\Flow\Core\Bootstrap)
+13 TYPO3\Flow\Core\Booting\Step::__invoke(TYPO3\Flow\Core\Bootstrap)
+12 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+11 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+10 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+9 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+8 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+7 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+6 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+5 TYPO3\Flow\Core\Booting\Sequence::invokeStep(TYPO3\Flow\Core\Booting\Step, TYPO3\Flow\Core\Bootstrap)
+4 TYPO3\Flow\Core\Booting\Sequence::invoke(TYPO3\Flow\Core\Bootstrap)
+3 TYPO3\Flow\Http\RequestHandler::boot()
+2 TYPO3\Flow\Http\RequestHandler::handleRequest()
+1 TYPO3\Flow\Core\Bootstrap::run()
