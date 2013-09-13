@@ -10,6 +10,7 @@
 	$application->setOption('repositoryUrl', 'https://github.com/colares/touke-flow.git');
    $application->setOption('composerCommandPath', '/usr/local/bin/composer');
    $application->setOption('keepReleases', 2);
+   
 
    //   $application->setOption('composerCommandPath', 'php /var/www/vhosts/neos.typo3.org/home/composer.phar');
    
