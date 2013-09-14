@@ -1,0 +1,112 @@
+[1;33mDeploying MyDeployment (20130913060011)[0m
+[0;37mUsing workflow "Simple workflow"[0m
+[1;33mStage initialize[0m
+[0;37mNode touke[0m
+[0;37mApplication TYPO3 Flow[0m
+[0;37mExecuting stage "initialize" (step "tasks") on "touke" for application TYPO3 Flow[0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:createdirectories[0m
+[0;37m$touke: "test -d /var/www/web/touke/htdocs"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[0;37m$touke: "mkdir -p /var/www/web/touke/htdocs/releases && mkdir -p /var/www/web/touke/htdocs/shared && mkdir -p /var/www/web/touke/htdocs/releases/20130913060011 && cd /var/www/web/touke/htdocs/releases;ln -snf ./20130913060011 next"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[0;37mTask "typo3.surf:generic:createDirectories" after "typo3.surf:createdirectories" for application TYPO3 Flow[0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:generic:createDirectories[0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:typo3:flow:createdirectories[0m
+[0;37m$touke: "mkdir -p /var/www/web/touke/htdocs/shared/Data/Logs && mkdir -p /var/www/web/touke/htdocs/shared/Data/Persistent && mkdir -p /var/www/web/touke/htdocs/shared/Configuration"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[1;33mStage package[0m
+[0;37mNode touke[0m
+[0;37mApplication TYPO3 Flow[0m
+[1;33mStage transfer[0m
+[0;37mNode touke[0m
+[0;37mApplication TYPO3 Flow[0m
+[0;37mExecuting stage "transfer" (step "tasks") on "touke" for application TYPO3 Flow[0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:gitCheckout[0m
+[0;37m$touke: "git ls-remote https://github.com/colares/touke-flow.git refs/heads/master | awk '{print $1 }'"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[0;37m    > 0cef2314f32eb6c8eace2a6fcdf3ff0e065e0169[0m
+[0;37m$touke: "if [ -d '/var/www/web/touke/htdocs/cache/transfer' ];     then      cd '/var/www/web/touke/htdocs/cache/transfer'      && git fetch -q origin      && git reset -q --hard 0cef2314f32eb6c8eace2a6fcdf3ff0e065e0169      && git submodule -q init      && for mod in `git submodule status | awk '{ print $2 }'`; do git config -f .git/config submodule.${mod}.url `git config -f .gitmodules --get submodule.${mod}.url` && echo synced $mod; done      && git submodule -q sync      && git submodule -q update --init --recursive      && git clean -q -d -x -ff;     else      git clone -q 'https://github.com/colares/touke-flow.git' '/var/www/web/touke/htdocs/cache/transfer'      && cd '/var/www/web/touke/htdocs/cache/transfer'      && git checkout -q -b deploy 0cef2314f32eb6c8eace2a6fcdf3ff0e065e0169      && git submodule -q init      && git submodule -q sync      && git submodule -q update --init --recursive;    fi"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[0;37m$touke: "cp -RPp /var/www/web/touke/htdocs/cache/transfer/. /var/www/web/touke/htdocs/releases/20130913060011     && (echo 0cef2314f32eb6c8eace2a6fcdf3ff0e065e0169 > /var/www/web/touke/htdocs/releases/20130913060011REVISION)"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[0;37mExecuting stage "transfer" (step "after") on "touke" for application TYPO3 Flow[0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:generic:createSymlinks[0m
+[0;37m$touke: "cd /var/www/web/touke/htdocs/releases/20130913060011"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[1;33mStage update[0m
+[0;37mNode touke[0m
+[0;37mApplication TYPO3 Flow[0m
+[0;37mExecuting stage "update" (step "tasks") on "touke" for application TYPO3 Flow[0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:composer:install[0m
+[0;37m$touke: "test -f '/var/www/web/touke/htdocs/releases/20130913060011/composer.json'"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[0;37m$touke: "cd '/var/www/web/touke/htdocs/releases/20130913060011' && /usr/local/bin/composer install --no-ansi --no-interaction --no-dev --no-progress"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[0;37m    > Loading composer repositories with package information[0m
+[0;37m    > Installing dependencies from lock file[0m
+[0;37m    >   - Removing mikey179/vfsstream (v1.1.0)[0m
+[0;37m    > Deleting Packages/Framework/TYPO3.Kickstart/ - deleted[0m
+[0;37m    > Generating autoload files[0m
+[0;37mExecuting stage "update" (step "after") on "touke" for application TYPO3 Flow[0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:typo3:flow:symlinkdata[0m
+[0;37m$touke: "mkdir -p /var/www/web/touke/htdocs/releases/20130913060011/Data && cd /var/www/web/touke/htdocs/releases/20130913060011 && ln -sf ../../../shared/Data/Logs ./Data/Logs && ln -sf ../../../shared/Data/Persistent ./Data/Persistent"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:typo3:flow:symlinkconfiguration[0m
+[0;37m$touke: "cd /var/www/web/touke/htdocs/releases/20130913060011/Configuration && rm -Rf Production/* && if [ -d Production ]; then rmdir Production; fi && mkdir -p ../../../shared/Configuration/Production && ln -snf ../../../shared/Configuration/Production Production"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:typo3:flow:copyconfiguration[0m
+[0;37m(localhost): "scp  /Library/WebServer/Documents/touke-flow/Build/Surf/MyDeployment/Configuration/Settings.yaml u-touke@ssh2.eu1.frbit.com:/var/www/web/touke/htdocs/releases/20130913060011/Configuration/./"[0m
+[1;33mStage migrate[0m
+[0;37mNode touke[0m
+[0;37mApplication TYPO3 Flow[0m
+[0;37mExecuting stage "migrate" (step "tasks") on "touke" for application TYPO3 Flow[0m
+[1;37mtouke (TYPO3 Flow) typo3.surf:typo3:flow:migrate[0m
+[0;37m$touke: "cd /var/www/web/touke/htdocs/releases/20130913060011 && FLOW_CONTEXT=Production ./flow typo3.flow:doctrine:migrate"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[0;37m    > bash: ./flow: Permission denied[0m
+[0;30m[43m^^                                 ^^
+\(><)/ Welcome to the rabbit hole. \(><)/
+
+bash: ./flow: Permission denied[0m
+[1;37m[41mGot exception "Command returned non-zero return code: 126" rolling back.[0m
+[1;37mRolling back TYPO3\Surf\Task\TYPO3\Flow\CopyConfigurationTask[0m
+[1;37mRolling back TYPO3\Surf\Task\TYPO3\Flow\SymlinkConfigurationTask[0m
+[1;37mRolling back TYPO3\Surf\Task\TYPO3\Flow\SymlinkDataTask[0m
+[1;37mRolling back TYPO3\Surf\Task\Composer\InstallTask[0m
+[1;37mRolling back TYPO3\Surf\Task\Generic\CreateSymlinksTask[0m
+[1;37mRolling back TYPO3\Surf\Task\GitCheckoutTask[0m
+[0;37m$touke: "rm -f /var/www/web/touke/htdocs/releases/20130913060011REVISION"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
+[1;37mRolling back TYPO3\Surf\Task\TYPO3\Flow\CreateDirectoriesTask[0m
+[1;37mRolling back TYPO3\Surf\Task\Generic\CreateDirectoriesTask[0m
+[1;37mRolling back TYPO3\Surf\Task\CreateDirectoriesTask[0m
+[0;37m$touke: "rm /var/www/web/touke/htdocs/releases/next && rm -rf /var/www/web/touke/htdocs/releases/20130913060011"[0m
+[0;37m    >   ^^                                 ^^[0m
+[0;37m    > \(><)/ Welcome to the rabbit hole. \(><)/[0m
+[0;37m    > [0m
