@@ -1,9 +1,14 @@
 <?php
 namespace Apimenti\Translator\Util;
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+/*                                                                            *
+ * This script belongs to the ToUke TYPO3 Flow package "Apimenti.Translator". *
+ *                                                                            *
+ * It is free software; you can redistribute it and/or modify it under        *
+ * the terms of the GNU Affero General Public License as published by         *
+ * the Free Software Foundation; either version 3 of the License, or          *
+ * (at your option) any later version.                                        *
+ *                                                                            *
+ *                                                                            */
 
 use TYPO3\Flow\Annotations as Flow;
 
