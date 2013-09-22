@@ -1,5 +1,6 @@
 <?php
-namespace Apimenti\Translator\Util;
+namespace Apimenti\Translator\Controller;
+
 /*                                                                            *
  * This script belongs to the ToUke TYPO3 Flow package "Apimenti.Translator". *
  *                                                                            *
@@ -12,29 +13,19 @@ namespace Apimenti\Translator\Util;
 
 use TYPO3\Flow\Annotations as Flow;
 
-/**
- * Description of General
- *
- * @author thiago
- */
-class General {
+class MissingChordController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
     /**
-     * Get Current Version
-     * @return type 
+     * @Flow\Inject
+     * @var \Apimenti\Translator\Domain\Repository\MissingChordRepository
      */
-    static public function getCurrentVersion() {
-        $json = file_get_contents(FLOW_PATH_PACKAGES . 'Application/Apimenti.Translator/composer.json');
-        $composerManifest = json_decode($json);
-        return $composerManifest->version;
-    }
+    protected $missingChordRepository;
 
     /**
-     * Get Current Date
-     * @return \DateTime
+     *
      */
-    static public function getToday() {
-        return new \DateTime();
+    public function indexAction() {
+        $missingChords = $this->missingChordRepository->findAll();
+        $this->view->assign('missingChords', $missingChords);
     }
-    
 }
