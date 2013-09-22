@@ -1,15 +1,15 @@
 <?php
 
 namespace Apimenti\Translator\ViewHelpers;
-/*                                                                            *
- * This script belongs to the ToUke TYPO3 Flow package "Apimenti.Translator". *
- *                                                                            *
- * It is free software; you can redistribute it and/or modify it under        *
- * the terms of the GNU Affero General Public License as published by         *
- * the Free Software Foundation; either version 3 of the License, or          *
- * (at your option) any later version.                                        *
- *                                                                            *
- *                                                                            */
+    /*                                                                            *
+     * This script belongs to the ToUke TYPO3 Flow package "Apimenti.Translator". *
+     *                                                                            *
+     * It is free software; you can redistribute it and/or modify it under        *
+     * the terms of the GNU Affero General Public License as published by         *
+     * the Free Software Foundation; either version 3 of the License, or          *
+     * (at your option) any later version.                                        *
+     *                                                                            *
+     *                                                                            */
 
 /**
  * View Helper which creates a control group form field based on twitter bootstrap
@@ -51,7 +51,7 @@ class ChordBoxViewHelper extends \TYPO3\Fluid\Core\ViewHelper\AbstractConditionV
      */
     private function buildChordBox($chordOriginal, $chordRootNote, $chordFormula) {
         $finalChord = $this->translateChord($chordRootNote, $chordFormula);
-        $variations = $this->countVariations($finalChord);
+        $variations = $this->countVariations($chordRootNote, $chordFormula);
         if($variations>1){
             return '<div class="thumbnail" style="text-align: center; width:75px; height: 100px; float: left; margin: 0px 10px 10px 0px" >
     <strong>'. $chordOriginal . 
@@ -82,10 +82,12 @@ class ChordBoxViewHelper extends \TYPO3\Fluid\Core\ViewHelper\AbstractConditionV
     /**
      * Count the number of existent variations of a given chord
      *
-     * @param $finalChord
+     * @param string $chordRootNote
+     * @param string $chordFormula
      * @return int
      */
-    public function countVariations($finalChord) {
+    public function countVariations($chordRootNote, $chordFormula) {
+        $finalChord = $this->translateChord($chordRootNote, $chordFormula);
         if(isset($this->chord->allChords[$finalChord])) {
             return $this->chord->allChords[$finalChord];
         }

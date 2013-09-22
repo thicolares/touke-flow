@@ -1,12 +1,5 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: colares
- * Date: 22/09/13
- * Time: 18:30
- * To change this template use File | Settings | File Templates.
- */
-namespace Apimenti\Translator\Domain\Repository;
+namespace Apimenti\Translator\Controller;
 
 /*                                                                            *
  * This script belongs to the ToUke TYPO3 Flow package "Apimenti.Translator". *
@@ -20,16 +13,19 @@ namespace Apimenti\Translator\Domain\Repository;
 
 use TYPO3\Flow\Annotations as Flow;
 
-/**
- * Simple entity for save missing chords
- *
- * @Flow\Scope("singleton")
- * @author Thiago Colares <thiago@apimenti.com.br>
- */
-class MissingChordRepository extends \TYPO3\Flow\Persistence\Repository {
-    /**
-     * @var array
-     */
-    protected $defaultOrderings = array('notation' => \TYPO3\Flow\Persistence\QueryInterface::ORDER_ASCENDING);
+class MissingChordController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
+    /**
+     * @Flow\Inject
+     * @var \Apimenti\Translator\Domain\Repository\MissingChordRepository
+     */
+    protected $missingChordRepository;
+
+    /**
+     *
+     */
+    public function indexAction() {
+        $missingChords = $this->missingChordRepository->findAll();
+        $this->view->assign('missingChords', $missingChords);
+    }
 }

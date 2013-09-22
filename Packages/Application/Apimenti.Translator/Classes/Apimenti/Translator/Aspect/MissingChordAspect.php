@@ -40,12 +40,13 @@ class MissingChordAspect {
      * @Flow\After("method(Apimenti\Translator\ViewHelpers\ChordBoxViewHelper->countVariations())")
      */
     public function saveMissingChord(\TYPO3\Flow\Aop\JoinPointInterface $joinPoint) {
-        $finalChord = $joinPoint->getMethodArgument('finalChord');
+        $chordRootNote = $joinPoint->getMethodArgument('chordRootNote');
+        $chordFormula = $joinPoint->getMethodArgument('chordFormula');
         $count = $joinPoint->getResult();
 
         if($count == 0) {
             $missingChord = new MissingChord();
-            $missingChord->setNotation($finalChord);
+            $missingChord->setNotation($chordRootNote . $chordFormula);
             $missingChord->setNoticedIn(General::getToday());
             $this->missingChordRepository->add($missingChord);
             $this->persistenceManager->persistAll();

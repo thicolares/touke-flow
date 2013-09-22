@@ -13,11 +13,13 @@ namespace Apimenti\Translator\Domain\Model;
  *                                                                            */
 
 use TYPO3\Flow\Annotations as Flow;
+use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Simple entity for save missing chords
  *
  * @Flow\Entity
+ *
  * @author Thiago Colares <thiago@apimenti.com.br>
  */
 class MissingChord {
