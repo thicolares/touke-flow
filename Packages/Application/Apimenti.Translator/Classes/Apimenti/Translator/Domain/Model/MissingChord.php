@@ -17,6 +17,7 @@ use TYPO3\Flow\Annotations as Flow;
 /**
  * Simple entity for save missing chords
  *
+ * @Flow\Entity
  * @author Thiago Colares <thiago@apimenti.com.br>
  */
 class MissingChord {
@@ -28,18 +29,27 @@ class MissingChord {
 
     /**
      * @var string
+     * @ORM\Column(nullable=true)
      */
     protected $song;
 
     /**
      * @var string
+     * @ORM\Column(nullable=true)
      */
     protected $songURL;
 
     /**
      * @var \DateTime
+     * @ORM\Column(nullable=true)
      */
-    protected $occurredIn;
+    protected $noticedIn;
+
+    /**
+     * @var \DateTime
+     * @ORM\Column(nullable=true)
+     */
+    protected $addedIn;
 
     /**
      * @param string $notation
@@ -55,19 +65,6 @@ class MissingChord {
         return $this->notation;
     }
 
-    /**
-     * @param \DateTime $occurredIn
-     */
-    public function setOccurredIn($occurredIn) {
-        $this->occurredIn = $occurredIn;
-    }
-
-    /**
-     * @return \DateTime
-     */
-    public function getOccurredIn() {
-        return $this->occurredIn;
-    }
 
     /**
      * @param string $song
@@ -97,8 +94,33 @@ class MissingChord {
         return $this->songURL;
     }
 
+    /**
+     * @param \DateTime $addedIn
+     */
+    public function setAddedIn($addedIn) {
+        $this->addedIn = $addedIn;
+    }
 
+    /**
+     * @return \DateTime
+     */
+    public function getAddedIn() {
+        return $this->addedIn;
+    }
 
+    /**
+     * @param \DateTime $noticedIn
+     */
+    public function setNoticedIn($noticedIn) {
+        $this->noticedIn = $noticedIn;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getNoticedIn() {
+        return $this->noticedIn;
+    }
 
 }
 

@@ -1,5 +1,13 @@
 <?php
-namespace Apimenti\Translator\Util;
+/**
+ * Created by JetBrains PhpStorm.
+ * User: colares
+ * Date: 22/09/13
+ * Time: 18:30
+ * To change this template use File | Settings | File Templates.
+ */
+namespace Apimenti\Translator\Domain\Repository;
+
 /*                                                                            *
  * This script belongs to the ToUke TYPO3 Flow package "Apimenti.Translator". *
  *                                                                            *
@@ -13,28 +21,11 @@ namespace Apimenti\Translator\Util;
 use TYPO3\Flow\Annotations as Flow;
 
 /**
- * Description of General
+ * Simple entity for save missing chords
  *
- * @author thiago
+ * @Flow\Scope("singleton")
+ * @author Thiago Colares <thiago@apimenti.com.br>
  */
-class General {
+class MissingChordRepository extends \TYPO3\Flow\Persistence\Repository {
 
-    /**
-     * Get Current Version
-     * @return type 
-     */
-    static public function getCurrentVersion() {
-        $json = file_get_contents(FLOW_PATH_PACKAGES . 'Application/Apimenti.Translator/composer.json');
-        $composerManifest = json_decode($json);
-        return $composerManifest->version;
-    }
-
-    /**
-     * Get Current Date
-     * @return \DateTime
-     */
-    static public function getToday() {
-        return new \DateTime();
-    }
-    
 }

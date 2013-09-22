@@ -43,9 +43,11 @@ class ChordBoxViewHelper extends \TYPO3\Fluid\Core\ViewHelper\AbstractConditionV
     
     /**
      * Build Chord Box
-     * @param type $chordRootNote
-     * @param type $chordFormula
-     * @return type 
+     *
+     * @param string $chordOriginal
+     * @param string $chordRootNote
+     * @param string $chordFormula
+     * @return string
      */
     private function buildChordBox($chordOriginal, $chordRootNote, $chordFormula) {
         $finalChord = $this->translateChord($chordRootNote, $chordFormula);
@@ -79,13 +81,15 @@ class ChordBoxViewHelper extends \TYPO3\Fluid\Core\ViewHelper\AbstractConditionV
 
     /**
      * Count the number of existent variations of a given chord
-     * @param int $finalChord 
+     *
+     * @param $finalChord
+     * @return int
      */
-    private function countVariations($finalChord) {
-			if(isset($this->chord->allChords[$finalChord])){
-             return $this->chord->allChords[$finalChord]; 
-			}
-         return 0;
+    public function countVariations($finalChord) {
+        if(isset($this->chord->allChords[$finalChord])) {
+            return $this->chord->allChords[$finalChord];
+        }
+        return 0;
     }
     
     /**
