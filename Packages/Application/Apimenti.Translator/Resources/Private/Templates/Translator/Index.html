@@ -7,19 +7,6 @@
 </f:section>
 
 <f:section name="Content">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-3">
-                <h2 style="margin:0px; padding:0px"><span class="label label-success">ToUke</span> <small>Traduz pra ukulelê.</small></h2>
-
-            </div>
-            <div class="col-lg-9">
-                <f:form action="index" object="{song}" name="song" id="song" class="form-inline">
-                    <f:form.textfield name="songURL" property="songURL" class="form-control col-4" placeholder="Cole o endereço de uma música no http://www.cifraclub.com.br. Depois aperte a tecla ENTER."/>
-                </f:form>
-            </div>
-        </div>
 
         <f:if condition="{song}">
             <div class="row">
@@ -40,11 +27,5 @@
             </div>
         </f:if>
         
-             <div class="row">
-                <div class="col-lg-12" style="text-align: right">                
-                    <small><em class="text-muted">Apimenti ToUke <a href="https://github.com/colares/touke-flow/wiki/Vers%C3%A3o-<wget:CurrentVersion />"> v<wget:CurrentVersion /></a></em></small>
-                </div>
-            </div>
 
-    </div>
 </f:section>

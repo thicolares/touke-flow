@@ -1,3 +1,4 @@
+{namespace wget=Apimenti\Translator\ViewHelpers}
 <!DOCTYPE html>
 <!--
 /*                                                                            *
@@ -16,8 +17,8 @@
 		<title><f:render section="Title" /></title>
       
 		<link rel="stylesheet" type="text/css" href="{f:uri.resource(path: 'css/bootstrap.min.css', package: 'Apimenti.Translator')}">
-      <link rel="stylesheet" type="text/css" href="{f:uri.resource(path: 'css/apimenti.css', package: 'Apimenti.Translator')}">
-
+          <link rel="stylesheet" type="text/css" href="{f:uri.resource(path: 'css/apimenti.css', package: 'Apimenti.Translator')}">
+        <link rel="stylesheet" type="text/css" href="{f:uri.resource(path: 'css/tagcloud.css', package: 'Apimenti.Translator')}">
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script type="text/javascript" src="{f:uri.resource(path: 'js/bootstrap.min.js', package: 'Apimenti.Translator')}"></script>      
 		<f:base />
@@ -26,8 +27,38 @@
 		<f:render partial="FlashMessages" />
       
 		<h1><f:render section="Title" /></h1>
-      
-		<f:render section="Content" />
+
+        <div class="container">
+
+            <f:render partial="SearchBox" arguments="{song: song}" />
+
+            <!-- CONTENT -->
+            <f:render section="Content" />
+            <!-- /CONTENT -->
+
+            <div class="row">
+                <div class="col-lg-12" style="text-align: right">
+                    <ul class="nav nav-pills pull-right">
+                        <li>
+                            <f:link.action action="index" controller="Translator" package="Apimenti.Translator" style="text-decoration:none">
+                                ToUke
+                            </f:link.action>
+                        </li>
+                        <li>
+                            <f:link.action action="index" controller="MissingChord" package="Apimenti.Translator" style="text-decoration:none">
+                                Acordes Desconhecidos
+                            </f:link.action>
+                        </li>
+                        <li>
+                            <a href="https://github.com/colares/touke-flow/wiki/Vers%C3%A3o-<wget:CurrentVersion />"><em>Versão <wget:CurrentVersion /></em></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
 	</body>
    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

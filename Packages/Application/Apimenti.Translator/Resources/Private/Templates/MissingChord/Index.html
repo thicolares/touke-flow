@@ -1,0 +1,16 @@
+{namespace wget=Apimenti\Translator\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="Title"></f:section>
+<f:section name="Content">
+    <div class="container">
+
+        <h1>Acordes Desconhecidos</h1>
+        <p>O ToUke não conhece as notações a seguir. Se você sabe quais acordes elas representam, por favor, <a href="https://www.facebook.com/groups/touke/">ensine-nos como estes acordes devem ser formados</a>! :)</p>
+        <div class="well">
+            <wget:MissingChordsCloud missingChords="{missingChords}" />
+        </div>
+
+    </div>
+</f:section>

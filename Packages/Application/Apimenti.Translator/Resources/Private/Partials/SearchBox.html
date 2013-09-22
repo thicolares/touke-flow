@@ -1,0 +1,13 @@
+{namespace wget=Apimenti\Translator\ViewHelpers}
+<div class="row">
+    <div class="col-lg-3">
+        <f:link.action action="index" controller="Translator" package="Apimenti.Translator" style="text-decoration:none">
+            <h2 style="margin:0px; padding:0px"><span class="label label-success">ToUke</span> <small>Traduz pra ukulelê.</small></h2>
+        </f:link.action>
+    </div>
+    <div class="col-lg-9">
+        <f:form controller="Translator" package="Apimenti.Translator"  action=" "  object="{song}" name="song" id="song" class="form-inline">
+            <f:form.textfield name="songURL" property="songURL" class="form-control col-4" placeholder="Cole o endereço de uma música no http://www.cifraclub.com.br. Depois aperte a tecla ENTER."/>
+        </f:form>
+    </div>
+</div>
