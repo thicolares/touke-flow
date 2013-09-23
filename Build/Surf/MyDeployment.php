@@ -26,7 +26,7 @@
 	
 
    $deployment->onInitialize(function() use ($workflow, $application) {
-       $workflow->removeTask('typo3.surf:typo3:flow:migrate');
+       $workflow->addTask('typo3.surf:typo3:flow:migrate');
    });
 
 ?>
