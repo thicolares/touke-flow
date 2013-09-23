@@ -2,7 +2,7 @@
     "name": "apimenti/translator",
     "type": "typo3-flow-package",
     "description": "Pacote principal do Apimenti ToUke",
-    "version": "0.3.0a",
+    "version": "0.3.1a",
     "require": {
         "typo3/flow": "*"
     },
