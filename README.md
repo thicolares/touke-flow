@@ -11,30 +11,30 @@ Timeline / Archive
 ===============
 **This project has been discontinued and deactivated on 2014!** But you can you the code at your will being aware of the license.
 
-##### First version
+### First version
 ![First version](img/01.jpg)
+
 Made on a Sunday night on March 3rd, 2010.
 
-
-##### First home
+### First home
 ![First home](img/02.jpg)
+
 First home, with a fancy logo :)
 
-
-##### Complex songs
+### Complex songs
 ![Complex songs](img/03.jpg)
+
 Started to parse complex chords and it's variations. Listen to ["O que será" on YouTube](https://www.youtube.com/watch?v=yIERqgKooiU). This is such a fascinating brazilian song. 
 
-
-##### Second home and logs
+### Second home and logs
 ![Second home](img/04.jpg)
+
 New pretty home :) Recognized more and chords. And started mapping not found chords. 
 
-
-##### Responsive interface
+### Responsive interface
 ![Responsive interface](img/05.png)
-Responsive interface. Listen to [Vamos fugir on YouTube](https://www.youtube.com/watch?v=sxmjMwmC8Us). Gilberto Gil is a genius. 
 
+Responsive interface. Listen to [Vamos fugir on YouTube](https://www.youtube.com/watch?v=sxmjMwmC8Us). Gilberto Gil is a genius. 
 
 
 Why touke-flow?
