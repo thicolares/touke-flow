@@ -9,7 +9,7 @@ The ukulele ([ˈʔukuˈlɛlɛ], oo-koo-le-le) is a Hawaiian member of the guitar
 
 Timeline / Archive
 ===============
-**This project has been discontinued and deactivated on 2014!** But you can you the code at your will being aware of the license.
+**This project has been discontinued and deactivated on 2014!** But you can use the code at your will being aware of the license.
 
 ### First version
 ![First version](img/01.jpg)
